@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Builtline Interior Nivas is a premier design studio in Bangalore. We combine creativity and functionality to deliver personalized interior solutions for modern homes.">
+    <link rel="icon" type="image/png" href="static/images/BUILTLINE1.jpg.jpeg">
+    <title>Top Interior Design Studio in Bangalore | Builtline Interior Nivas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+<section class="section-container">
+   
+        <header class="navbar other-page" data-aos="zoom-in" data-aos-delay="200">
+            <div class="container">
+                    <div class="nav-left">
+                       <img src="static/images/BUILTLINE.png" alt="">
+                    </div>
+
+                    <ul class="nav-links" id="navLinks" style="color: #000;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a>
+                           <ul>
+                                <li><a href="living-room-interior.html">Living Room</a></li>
+                                <li><a href="bed-room-interior.html">Bed Room</a></li>
+                                <li><a href="modular-kitchen-interior.html">Modular Kitchen</a></li>
+                                <li><a href="pooja-room-interior.html">Pooja Room</a></li>
+                                <li><a href="dining-interior.html">Dining Room</a></li>
+                                <li><a href="commerial-interiors.html">Commercial Interior</a></li>  </ul>
+
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
+
+                    </ul>
+
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                    <a class="quote-btn" href="contact.html" >
+                        Get A Free Quote
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+            </div>
+        </header>
+        
+       <div class="container">
+            <div class="about-section">
+
+                <div class="about-title-block">
+                    <h1 class="main-headline">
+                        ABOUT<br>US
+                    </h1>
+                    <div class="intro-text-wrapper">
+                        <p class="intro-heading">Luxurious Interior and Industrial Design</p>
+                        <p class="intro-body">Modern Elegance: Designs featuring clean lines, neutral palettes, and high-quality materials.</p>
+                    </div>
+                </div>
+
+                <div class="about-hero-image">
+                    <img src="static/images/bedroom2.jpg" alt="Luxurious living room design with neutral palette" class="rounded-image">
+                </div>
+
+                <div class="philosophy-block">
+                    
+                    <div class="philosophy-image-wrapper">
+                        <img src="static/images/central-table2.jpg" alt="Detail shot of high-quality interior materials" class=" philosophy-detail-img">
+                    </div>
+                    
+                    <div class="philosophy-text-wrapper">
+                        <h2 class="sub-headline">Our Philosophy</h2>
+                        <p class="philosophy-body">At Builtline Interior Nivas, we believe in creating luxurious, personalized environments that reflect our clients' tastes and lifestyles.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+           <section class="ceo-section">
+
+                <div class="ceo-container">
+
+                    <!-- Left Content -->
+                    <div class="ceo-text">
+                        <h6>Meet Our Ceo <span class="line"><hr></span></h6>
+                        <h1>
+                             <b>Harsha A V</b>
+                        </h1>
+                        <h6>Founder</h6>
+
+                        <p>
+                            With years of experience in the interior design industry, a strong focus is placed on delivering creative, functional and high-quality spaces. Deep knowledge of modern design trends, materials and space planning ensures that every project is handled with precision and attention to detail, resulting in interiors that reflect both style and practicality.
+                        </p>
+                        <p>Efficient project handling, team coordination and time management are essential parts of the process, ensuring timely delivery without compromising quality.</p>
+
+                        <div class="ceo-buttons" >
+                            <!-- <a href="#" class="ceo-btn outline">Read More</a> -->
+                             <a href="ceo-profile.html" class="outline"> Read More
+                                <span></span>
+                             </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="ceo-image">
+                        <div class="green-bg"></div>
+                        <img src="static/images/client1.jpg" alt="Hero Image">
+                    </div>
+
+                </div>
+
+            </section>
+
+             <section class="team-section">
+
+                <!-- Card 1 -->
+                <div class="team-card" onclick="openModal('modal1')">
+                    <img src="static/images/prathana1.jpeg" alt="">
+                    <div class="overlay"></div>
+
+                    <div class="card-info" data-aos="fade-up">
+                        <div>
+                            <h5>Prarthana P</h5>
+                            <span>General Manager</span>
+                        </div>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="team-card" onclick="openModal('modal2')">
+                    <img src="static/images/client1.jpg" alt="">
+                    <div class="overlay"></div>
+
+                    <div class="card-info" data-aos="fade-up">
+                        <div>
+                            <h3>Vinya Shetty</h3>
+                            <span>Interior Designer</span>
+                        </div>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- MODAL -->
+            <div id="modal1" class="modal">
+                <div class="modal-box">
+                    <div class="modal-content">
+                        <div class="modal-img">
+                            <img src="static/images/prathana1.jpeg" alt="">
+                        </div>
+
+                        <div class="modal-text">
+                            <h2>Prarthana P</h2>
+                            <h5>General Manager</h5>
+                            <p>With extensive experience in project management and operations, the General Manager is responsible for planning, coordinating and supervising all aspects of interior design projects. From client communication to team management, every process is handled with precision and professionalism. By ensuring effective resource allocation and timely delivery, the role contributes to maintaining quality standards and building long-term client relationships.
+                            </p>
+                        </div>
+                        <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    </div>
+                </div>
+            </div>
+
+             <div id="modal2" class="modal">
+                <div class="modal-box">
+                    <div class="modal-content">
+
+                        <div class="modal-img">
+                            <img src="static/images/client1.jpg" alt="">
+                        </div>
+
+                        <div class="modal-text">
+                            <h2>Viyna Sheety</h2>
+                            <h5>Interior Designer</h5>
+                            <p>
+                               With a strong understanding of design concepts and space planning, the Interior Designer transforms ideas into well-structured and elegant interiors. Responsibilities include selecting materials, designing layouts, coordinating with clients and ensuring smooth execution of projects. A focus on detail and innovation helps in delivering customized solutions that enhance both comfort and style.
+                            </p>
+                        </div>
+                        <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    </div>
+                    
+
+                </div>
+            </div>
+        
+
+            <section class="contact-section" id="contact">
+    
+                <!-- Left Image -->
+                <div class="contact-image">
+                    <img src="static/images/TF-POOJA ROOM 1.jpg.jpeg" alt="Contact" loading="lazy">
+                </div>
+
+                <!-- Right Form -->
+                <div class="interior-form">
+                    <center><h3>Talk To Our <br> Interior Designer Experts</h3></center>
+                    <p>Let’s create your dream space with style and comfort.</p>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <input type="text" placeholder="Phone Number">
+                        <textarea placeholder="Your Message" cols="3" rows="5"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </section>
+
+           
+            <div class="contact-panel">
+
+                <a href="tel:+919148498588" class="panel-item">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <a  href="https://wa.me/919148498588" 
+                    target="_blank" class="panel-item">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Builtline+Construction+Bangalore" target="_blank" class="panel-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+
+
+    
+    
+    <!--  -->
+        </div>
+    </section>
+
+    <script src="static/css/scrtpt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,     // animation speed
+            once: false,        // 🔥 repeat animation on scroll
+            offset: 120,        // trigger earlier
+            easing: 'ease-in'
+        });
+    </script>
+
+
+</body>
+</html>

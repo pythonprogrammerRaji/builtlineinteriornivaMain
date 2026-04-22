@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+.review-section { 
+    padding: 100px 0; 
+    overflow: hidden; 
+}
+.review-container { 
+    max-width: 1300px; 
+    margin: 0 auto; 
+    position: relative; 
+}
+
+.review-title { 
+    text-align: right; 
+    margin-bottom: 20px; 
+    padding-right: 50px; 
+}
+.review-title h2 { 
+    font-size: 38px; 
+    color: #111; 
+}
+
+.frame { 
+    position: relative; 
+    display: flex; 
+    align-items: flex-end; 
+}
+
+/* Left Side Image */
+.photo-box { 
+    width: 40%; 
+    height: 450px; 
+    position: relative; 
+    z-index: 1; 
+}
+.photo-box img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+/* Controls */
+.controls { 
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+    display: flex; 
+    gap: 10px;
+ }
+.arrow { 
+    width: 45px; 
+    height: 45px; 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    cursor: pointer; 
+    font-size: 18px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Black Slider Window - Wide enough for 2 cards */
+.slider-box {
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+    width: 70%; /* Overlaps roughly half the image */
+    padding: 60px 40px;
+    z-index: 2;
+    overflow: hidden; /* Important for sliding */
+}
+
+.track { 
+    display: flex;
+     transition: 0.5s ease-in-out;
+     /* gap: 20px; */
+    }
+
+/* Each card takes half the width of the black box */
+.review-card {
+    min-width: 54%; 
+    height: 300px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #1a1a1a;
+    border-left: 15px solid #fff;
+    border-top: 15px solid #fff;
+
+
+}
+
+.quote { 
+    font-size: 50px; 
+    color: #fff; 
+    display: block; 
+    margin-bottom: 10px; 
+}
+.review-card p { 
+    font-size: 14px; 
+    line-height: 1.6; 
+    color: #ddd; 
+    margin-bottom: 30px; 
+}
+
+.profile { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+.profile img { 
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%; 
+}
+.user-meta strong { 
+    font-size: 15px; 
+}
+.user-meta span { 
+    font-size: 12px; 
+    color: #888; 
+}
+</style>
+<body>
+    <div class="review-section">
+    <div class="review-container">
+
+        <div class="frame">
+            <div class="photo-box">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200" alt="Interior">
+
+                 <div class="controls">
+                    <button class="arrow" id="prev">←</button>
+                    <button class="arrow" id="next">→</button>
+                 </div>
+            </div>
+
+            <div class="slider-box">
+                <div class="track" id="track">
+                    
+                    <div class="review-card">
+                        <span class="quote">“</span>
+                        <p>Working with your design team was an absolute pleasure. The attention to detail exceeded expectations.</p>
+                        <div class="profile">
+                            <img src="https://i.pravatar.cc/100?u=1">
+                            <div class="user-meta">
+                                <strong>Sophie Carter</strong><br>
+                                <span>New York, USA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <span class="quote">“</span>
+                        <p>Exceptional service! From the initial consultation to the final reveal, your team was professional.</p>
+                        <div class="profile">
+                            <img src="https://i.pravatar.cc/100?u=2">
+                            <div class="user-meta">
+                                <strong>James Bennett</strong><br>
+                                <span>Toronto, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <span class="quote">“</span>
+                        <p>The quality of the materials and the final finish is outstanding. Highly recommend this team.</p>
+                        <div class="profile">
+                            <img src="https://i.pravatar.cc/100?u=3">
+                            <div class="user-meta">
+                                <strong>Emma Watson</strong><br>
+                                <span>London, UK</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    </div>
+
+    <h3>Our Living Room Design Process</h3>
+                <ul class="features">
+                    <li>✔ Understanding your requirements</li>
+                    <li>✔ Creating design concepts and layouts</li>
+                    <li>✔ Material selection and budgeting</li>
+                    <li>✔ Execution and installation</li>
+                    <li>✔ Final finishing and handover</li>
+                </ul>
+
+<script>
+    var track = document.getElementById('track');
+    var next = document.getElementById('next');
+    var prev = document.getElementById('prev');
+
+var currentPos = 0;
+
+next.onclick = function() {
+    // Moves by 50% because cards are 50% width
+    // Limit is -50% because we have 3 cards total (shows 2, 1 remains)
+    if (currentPos > -60) {
+        currentPos = currentPos - 58;
+        track.style.transform = 'translateX(' + currentPos + '%)';
+    } else {
+        currentPos = 0;
+        track.style.transform = 'translateX(0%)';
+    }
+};
+
+prev.onclick = function() {
+    if (currentPos < 0) {
+        currentPos = currentPos + 55;
+        track.style.transform = 'translateX(' + currentPos + '%)';
+    } else {
+        currentPos = -50;
+        track.style.transform = 'translateX(' + currentPos + '%)';
+    }
+};
+</script>
+</body>
+</html>
