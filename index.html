@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-<section class="section-container">
+    <section class="section-container">
    
         <header class="navbar" data-aos="zoom-in" data-aos-delay="200">
         <div class="container">
@@ -48,682 +48,683 @@
         </div>
         </header>
 
-        <div class="container">
+        
             <!-- hero section -->
-        <section class="hero" id="hero">
-            <!-- Videos -->
-            <video class="bg-video active" src="static/images/home-interiore.mp4" autoplay muted loop preload="auto"></video>
-            <video class="bg-video" src="static/images/her-bendroom.mp4" autoplay muted loop preload="auto"></video>
-            <!-- <video class="bg-video" src="static/images/hero-video.mp4" autoplay muted loop preload="auto"></video> -->
-            <video class="bg-video" src="static/images/hero-kichen.mp4" autoplay muted loop preload="auto"></video>
+        <div class="main-section">
+            <div class="container">
+            <section class="hero" id="hero">
+                <!-- Videos -->
+                <video class="bg-video active" src="static/images/home-interiore.mp4" autoplay muted loop preload="auto"></video>
+                <video class="bg-video" src="static/images/her-bendroom.mp4" autoplay muted loop preload="auto"></video>
+                <!-- <video class="bg-video" src="static/images/hero-video.mp4" autoplay muted loop preload="auto"></video> -->
+                <video class="bg-video" src="static/images/hero-kichen.mp4" autoplay muted loop preload="auto"></video>
 
-            <!-- Overlay -->
-            <div class="overlay"></div>
+                <!-- Overlay -->
+                <div class="overlay"></div>
 
-            <!-- Content -->
-            <div class="hero-content" data-aos="fade-right" data-aos-delay="400">
-                <b class="hero-tag">Luxury Interior Solutions</b>
-                <h1>Crafting Interiors for <br> <span>Modern Living</span> </h1>
-                <p>We design elegant and functional interiors tailored to your lifestyle.</p>
-                <button class="button">Get in touch</button>
+                <!-- Content -->
+                <div class="hero-content" data-aos="fade-right" data-aos-delay="400">
+                    <b class="hero-tag">Luxury Interior Solutions</b>
+                    <h1>Crafting Interiors for <br> <span>Modern Living</span> </h1>
+                    <p>We design elegant and functional interiors tailored to your lifestyle.</p>
+                    <button class="button">Get in touch</button>
+                </div>
+                <!-- Button -->
+                <button class="enquiry-btn" onclick="openForm()">Enquiry Now</button>
+
+                <!-- Form Panel -->
+                <div class="enquiry-form" id="enquiryForm" >
+
+                    <button class="close-btn" onclick="closeForm()">Hide</button>
+
+                    <h2>TALK TO A DESIGNER</h2>
+
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email Id">
+                    <input type="text" placeholder="Mobile">
+                    <input type="text" placeholder="Location">
+
+                    <button class="submit-btn">Get Free Quote</button>
+
+                </div>
+            
+        </section>
+
+
+     <!-- about -->
+        <section class="about" data-aos="fade-down">
+            <div class="about-text">
+            <h2><i class="fa-solid fa-circle"></i> About Us</h2>
+
+            <p>
+                We create modern, functional, and elegant interior spaces tailored to your lifestyle. 
+                From concept to execution,<br> we ensure quality and perfection in every project.
+            </p>
+
+            <ul>
+                <li>✔ Premium Quality Materials</li>
+                <li>✔ Expert Designers</li>
+                <li>✔ On-Time Delivery</li>
+            </ul>
+
+            <a href="contact.html" class="about-btn">Get Free Consultation</a>
             </div>
 
-            <!-- Button -->
-            <button class="enquiry-btn" onclick="openForm()">Enquiry Now</button>
+            <!-- RIGHT STATS -->
+            <div class="about-stats" id="counter">
+                <div class="stat-card">
+                    <i class="fa-solid fa-building"></i>
+                    <h3 class="count" data-target="70">0</h3>
+                    <h5>Completed Projects </h5>
+                    <p>We have successfully completed numerous interior projects with a strong focus on quality, creativity</p>
+                </div>
 
-            <!-- Form Panel -->
-            <div class="enquiry-form" id="enquiryForm" >
+                <div class="stat-card">
+                    <i class="fa-solid fa-house"></i>
+                    <h3 class="count" data-target="5">0</h3>
+                    <h5>Years of Experiences</h5>
+                    <p>Years of Experience Interior design</p>
+                </div>
 
-                <button class="close-btn" onclick="closeForm()">Hide</button>
+                <div class="stat-card">
+                    <i class="fa-solid fa-people-roof"></i>
+                    <h3 class="count" data-target="12">0</h3>
+                    <h5>Happy Clients</h5>
+                    <p>We have built strong relationships with clients by delivering quality designs, timely execution, and exceptional service.</p>
+                </div>
 
-                <h2>TALK TO A DESIGNER</h2>
+                <div class="stat-card">
+                    <i class="fa-solid fa-hourglass-end"></i>
+                    <h3 data-target="10">100%</h3>
+                    <h5>On-Time Delivery</h5>
+                    <p>Trusted by satisfied clients through transparent communication, and consistent project outcomes.</p>
+                </div>
+            </div>
 
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email Id">
-                <input type="text" placeholder="Mobile">
-                <input type="text" placeholder="Location">
+        
+        </section>
 
-                <button class="submit-btn">Get Free Quote</button>
+        <section class="services">
+            <div class="service-heading" data-aos="zoom-in">
+                <span class="line"></span>
+                <h1>Fully Customized Interiors by Expert Professionals</h1>
+                <span class="line"></span>
+            </div>
+
+            <div class="service-grid">
+
+                <!-- LEFT SMALL -->
+                <a href="bed-room-interior.html" class="card c5" data-aos="zoom-in">
+                <img src="static/images/bedrooms.jpg" alt="bedroom.jpg" loading="lazy">
+                <h3>Bedroom</h3>
+                </a>
+
+                <a href="living-room-interior.html" class="card c2" data-aos="fade-right">
+                <img src="static/images/FF - LIVING AREA 4.jpg.jpeg" alt="" loading="lazy">
+                <h3>Living</h3>
+                </a>
+
+                <a href="dining-interior.html" class="card c1" data-aos="fade-right">
+                <img src="static/images/FF - DINING 1.jpg.jpeg" alt="" loading="lazy">
+                <h3>Dining</h3>
+                </a>
+
+                <!-- CENTER BIG -->
+                <a href="modular-kitchen-interior.html" class="card c4" data-aos="zoom-in">
+                <img src="static/images/TF-KITCHEN 1.1.jpg.jpeg" alt="" loading="lazy">
+                <h3>Kitchen</h3>
+                </a>
+
+                <!-- RIGHT TALL -->
+                <a href="pooja-room-interior.html" class="card c6" data-aos="fade-left">
+                <img src="static/images/TF-POOJA ROOM 1.jpg.jpeg" alt="" loading="lazy">
+                <h3>Pooja</h3>
+                </a>
 
             </div>
         </section>
 
-     <!-- about -->
-      <section class="about" data-aos="fade-down">
-
-    `   <!-- LEFT CONTENT -->
-        <div class="about-text">
-        <h2><i class="fa-solid fa-circle"></i> About Us</h2>
-
-        <p>
-            We create modern, functional, and elegant interior spaces tailored to your lifestyle. 
-            From concept to execution,<br> we ensure quality and perfection in every project.
-        </p>
-
-        <ul>
-            <li>✔ Premium Quality Materials</li>
-            <li>✔ Expert Designers</li>
-            <li>✔ On-Time Delivery</li>
-        </ul>
-
-        <a href="contact.html" class="about-btn">Get Free Consultation</a>
-        </div>
-
-        <!-- RIGHT STATS -->
-        <div class="about-stats" id="counter">
-            <div class="stat-card">
-                <i class="fa-solid fa-building"></i>
-                <h3 class="count" data-target="70">0</h3>
-                <h5>Completed Projects </h5>
-                <p>We have successfully completed numerous interior projects with a strong focus on quality, creativity</p>
+        <section class="products-services">
+            <div class="product-heading" data-aos="zoom-in">
+                <span>Our Services</span>
+                <h1>What We Offer</h1>
             </div>
 
-            <div class="stat-card">
-                <i class="fa-solid fa-house"></i>
-                <h3 class="count" data-target="5">0</h3>
-                <h5>Years of Experiences</h5>
-                <p>Years of Experience Interior design</p>
+            <div class="product-wrapper" data-aos="fade-down">
+                <div class="product-card">
+                    <img src="static/images/living (1).png" alt="" loading="lazy">
+                    <h3>Living Room Design</h3>
+                    <p>Creating a welcoming and stylish living area tailored to your lifestyle. From Furniture selection to layout optimization. we craft your perfect gathering space</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="static/images/kitchen.png" alt="" loading="lazy">
+                    <h3>Kitchen Makeovers</h3>
+                    <p>Transforming your kitchen into s modern culinary sanctuary. We Combine aesthetics with functionality, the latest trends and space saving solutions</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="static/images/bed.png" alt="" loading="lazy">
+                    <h3>Bedroom Retreats</h3>
+                    <p>Turn your bedroom into a personal retreat with custom themes, cozy textures and smart lighting that promotes rest amd relaxation</p>
+                </div>
             </div>
 
-            <div class="stat-card">
-                <i class="fa-solid fa-people-roof"></i>
-                <h3 class="count" data-target="12">0</h3>
-                <h5>Happy Clients</h5>
-                <p>We have built strong relationships with clients by delivering quality designs, timely execution, and exceptional service.</p>
+            
+            <div class="product-wrapper" data-aos="fade-up">
+                <div class="product-card">
+                    <img src="static/images/light.png" alt="" loading="lazy">
+                    <h3>Lighting Design</h3>
+                    <p>Achieve the perfect balance og ambient, task, and accent lighting for a functional atmosphere. Full Interior with lighting decorating</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="static/images/shelf.png" alt="" loading="lazy">
+                    <h3>Decor and Styling</h3>
+                    <p>Perfect for homes needing a refresh without renovation. We enhance your space with curated decor, color coordination and layout staying</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="static/images/clean.png" alt="" loading="lazy">
+                    <h3>Full Home Renovation</h3>
+                    <p>A Top-to-bottom transformation that reimagined your entire home. From design concept to final styling, we ensure a cohesive and stunning outcomes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h1>Portfolio</h1>
+
+            <div class="filters" data-aos="zoom-in">
+                <button class="filter-btn" onclick="filterSelection('all', this)" class="active">All</button>
+                <button class="filter-btn" onclick="filterSelection('living', this)">Living</button>
+                <button class="filter-btn" onclick="filterSelection('bedroom', this)">Bedroom</button>
+                <button class="filter-btn" onclick="filterSelection('kitchen', this)">Kitchen</button>
+                <button class="filter-btn" onclick="filterSelection('dining', this)">Dining</button>
+            </div>
+        </section>
+
+        <section class="gallery" data-aos="fade-down">
+            <div class="item living">
+                <img src="static/images/FF - LIVING AREA 4.jpg.jpeg" alt="" loading="lazy">
+                <div class="overlay">Living Room</div>
             </div>
 
-             <div class="stat-card">
-                <i class="fa-solid fa-hourglass-end"></i>
-                <h3 data-target="10">100%</h3>
-                <h5>On-Time Delivery</h5>
-                <p>Trusted by satisfied clients through transparent communication, and consistent project outcomes.</p>
-            </div>
-        </div>
-
-       
-     </section>
-
-    <section class="services">
-        <div class="service-heading" data-aos="zoom-in">
-            <span class="line"></span>
-            <h1>Fully Customized Interiors by Expert Professionals</h1>
-            <span class="line"></span>
-        </div>
-
-        <div class="service-grid">
-
-            <!-- LEFT SMALL -->
-            <a href="bed-room-interior.html" class="card c5" data-aos="zoom-in">
-            <img src="static/images/bedrooms.jpg" alt="bedroom.jpg" loading="lazy">
-            <h3>Bedroom</h3>
-            </a>
-
-            <a href="living-room-interior.html" class="card c2" data-aos="fade-right">
-            <img src="static/images/FF - LIVING AREA 4.jpg.jpeg" alt="" loading="lazy">
-            <h3>Living</h3>
-            </a>
-
-            <a href="dining-interior.html" class="card c1" data-aos="fade-right">
-            <img src="static/images/FF - DINING 1.jpg.jpeg" alt="" loading="lazy">
-            <h3>Dining</h3>
-            </a>
-
-            <!-- CENTER BIG -->
-            <a href="modular-kitchen-interior.html" class="card c4" data-aos="zoom-in">
-            <img src="static/images/TF-KITCHEN 1.1.jpg.jpeg" alt="" loading="lazy">
-            <h3>Kitchen</h3>
-            </a>
-
-            <!-- RIGHT TALL -->
-            <a href="pooja-room-interior.html" class="card c6" data-aos="fade-left">
-            <img src="static/images/TF-POOJA ROOM 1.jpg.jpeg" alt="" loading="lazy">
-            <h3>Pooja</h3>
-            </a>
-
-        </div>
-    </section>
-
-    <div class="products-services">
-        <div class="product-heading" data-aos="zoom-in">
-            <span>Our Services</span>
-            <h1>What We Offer</h1>
-        </div>
-
-        <div class="product-wrapper" data-aos="fade-down">
-            <div class="product-card">
-                <img src="static/images/living (1).png" alt="" loading="lazy">
-                <h3>Living Room Design</h3>
-                <p>Creating a welcoming and stylish living area tailored to your lifestyle. From Furniture selection to layout optimization. we craft your perfect gathering space</p>
+            <div class="item bedroom">
+                <img src="static/images/bedrooms.jpg" alt="" loading="lazy">
+                <div class="overlay">Modern BedRoom</div>
             </div>
 
-            <div class="product-card">
-                <img src="static/images/kitchen.png" alt="" loading="lazy">
-                <h3>Kitchen Makeovers</h3>
-                <p>Transforming your kitchen into s modern culinary sanctuary. We Combine aesthetics with functionality, the latest trends and space saving solutions</p>
+            <div class="item kitchen">
+                <img src="static/images/SF-KIDS STUDY 1.jpg.jpeg" alt="" loading="lazy">
+                <div class="overlay">Luxury Kitchen</div>
             </div>
 
-            <div class="product-card">
-                <img src="static/images/bed.png" alt="" loading="lazy">
-                <h3>Bedroom Retreats</h3>
-                <p>Turn your bedroom into a personal retreat with custom themes, cozy textures and smart lighting that promotes rest amd relaxation</p>
+            <div class="item dining">
+                <img src="static/images/TF-DINING 1.jpg.jpeg" alt="" loading="lazy">
+                <div class="overlay">Classic Dining</div>
             </div>
-        </div>
+
+            <div class="item bedroom">
+                <img src="static/images/bedroom2.jpg" alt="" loading="lazy">
+                <div class="overlay">Modern BedRoom</div>
+            </div>
+
+            <div class="item dining">
+                <img src="static/images/FF - DINING 1.jpg.jpeg" alt="" loading="lazy">
+                <div class="overlay">Classic Dining</div>
+            </div>
+
+            <div class="item living">
+                <img src="static/images/living2.jpg" alt="" loading="lazy">
+                <div class="overlay">Living Room</div>
+            </div>
+
+            <div class="item kitchen">
+                <img src="static/images/kichen2.jpg" alt="" loading="lazy">
+                <div class="overlay">Luxury Kitchen</div>
+            </div>
+
+            <div class="item dining">
+                <img src="static/images/TF-DINING.jpg.jpeg" alt="" loading="lazy">
+                <div class="overlay">Classic Dining</div>
+            </div>
+
+            <div class="item bedroom">
+                <img src="static/images/bedroom1.jpg" alt="" loading="lazy">
+                <div class="overlay">Modern BedRoom</div>
+            </div>
+
+
+        </section>
+
+        <section class="why-choose">
+            <!-- LEFT SIDE -->
+            <div class="left" data-aos="fade-right">
+                <h1><i class="fa-solid fa-circle" data-aos="zoom-in"></i>Why Choose Us</h1>
+                <h2 data-aos="zoom-in">Why Choose Builtline Interiors?</h2>
+
+                <ul>
+                <li><i class="fa-solid fa-check"></i> Expert team with modern design thinking</li>
+                <li><i class="fa-solid fa-check"></i>High-quality materials and premium finish</li>
+                <li><i class="fa-solid fa-check"></i> Customized designs for every space</li>
+                <li><i class="fa-solid fa-check"></i> End-to-end project management</li>
+                <li><i class="fa-solid fa-check"></i> On-time delivery with transparency</li>
+                </ul>
+
+                <p>
+                Enhance your home with modern, elegant, and highly functional interior designs. We combine creativity with quality craftsmanship to create beautiful spaces that truly reflect your style and comfort.
+                Transform your home with smart, stylish, and functional interiors. 
+                We bring creativity and quality together to build spaces you love.
+                </p>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="right" data-aos="fade-left">
+                <div class="image-card"> 
+                <img id="sliderImage" src="static/images/living2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+        <div class="process">
+
+            <h2 data-aos="zoom-in">Our Working Process</h2>
+
+            <!-- STEP 1 -->
+            <div class="step" data-aos="fade-right">
+                <!-- LEFT SIDE (2 IMAGES) -->
+                <div class="image-side">
+                <img src="static/images/living2.jpg" class="main-img" loading="lazy">
+                <img src="static/images/interior-design-consultant.webp" class="overlay-img" loading="lazy">
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="content" >
+                <span>01</span>
+                <h3>Design Consultation</h3>
+                <p>Meet our experts to understand your vision and requirements.</p>
+                </div>
+
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step reverse" data-aos="fade-left">
+                
+                <div class="image-side">
+                <img src="static/images/living2.jpg" class="main-img" loading="lazy">
+                <img src="static/images/planning.avif" class="overlay-img" loading="lazy">
+                </div>
+
+                <div class="content">
+                <span>02</span>
+                <h3>Planning & Concept</h3>
+                <p>We create layouts and 3D concepts for your space.</p>
+                </div>
+
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step" data-aos="fade-right">
+                
+                <!-- LEFT SIDE (2 IMAGES) -->
+                <div class="image-side">
+                <img src="static/images/living2.jpg" class="main-img" loading="lazy">
+                <img src="static/images/material_selection.jpg" class="overlay-img" loading="lazy">
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="content">
+                <span>03</span>
+                <h3>Material Selection</h3>
+                <p>Select finishes, colors, and materials for your interiors.<</p>
+                </div>
+
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="step reverse" data-aos="fade-left">
+                
+                <div class="image-side">
+                <img src="static/images/living2.jpg" class="main-img" loading="lazy"> 
+                <img src="static/images/exceuction.png" class="overlay-img" loading="lazy">
+                </div>
+
+                <div class="content">
+                    <span>04</span>
+                    <h3>Execution & Installation</h3>
+                    <p>We execute the design with high quality and precision.</p>
+                </div>
+
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="step" data-aos="fade-right">
+                
+                <!-- LEFT SIDE (2 IMAGES) -->
+                <div class="image-side">
+                <img src="static/images/living2.jpg" class="main-img" loading="lazy">
+                <img src="static/images/handover.jpg" class="overlay-img" loading="lazy">
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="content">
+                    <span>05</span>
+                    <h3>Final Handover</h3>
+                    <p>We deliver a ready-to-move beautiful interior space.</p>
+                </div>
+
+            </div>
 
         
-        <div class="product-wrapper" data-aos="fade-up">
-            <div class="product-card">
-                <img src="static/images/light.png" alt="" loading="lazy">
-                <h3>Lighting Design</h3>
-                <p>Achieve the perfect balance og ambient, task, and accent lighting for a functional atmosphere. Full Interior with lighting decorating</p>
-            </div>
-
-            <div class="product-card">
-                <img src="static/images/shelf.png" alt="" loading="lazy">
-                <h3>Decor and Styling</h3>
-                <p>Perfect for homes needing a refresh without renovation. We enhance your space with curated decor, color coordination and layout staying</p>
-            </div>
-
-            <div class="product-card">
-                <img src="static/images/clean.png" alt="" loading="lazy">
-                <h3>Full Home Renovation</h3>
-                <p>A Top-to-bottom transformation that reimagined your entire home. From design concept to final styling, we ensure a cohesive and stunning outcomes</p>
-            </div>
         </div>
-    </div>
+        </section>
 
-    <section class="portfolio">
-        <h1>Portfolio</h1>
+        <section  class="review-section">
+            <div class="review-container">
+                <div class="frame">
+                    <div class="photo-box" data-aos="fade-right">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200" alt="Interior" loading="lazy">
 
-        <div class="filters" data-aos="zoom-in">
-            <button class="filter-btn" onclick="filterSelection('all', this)" class="active">All</button>
-            <button class="filter-btn" onclick="filterSelection('living', this)">Living</button>
-            <button class="filter-btn" onclick="filterSelection('bedroom', this)">Bedroom</button>
-            <button class="filter-btn" onclick="filterSelection('kitchen', this)">Kitchen</button>
-            <button class="filter-btn" onclick="filterSelection('dining', this)">Dining</button>
-        </div>
-    </section>
-
-    <div class="gallery" data-aos="fade-down">
-        <div class="item living">
-            <img src="static/images/FF - LIVING AREA 4.jpg.jpeg" alt="" loading="lazy">
-            <div class="overlay">Living Room</div>
-        </div>
-
-        <div class="item bedroom">
-            <img src="static/images/bedrooms.jpg" alt="" loading="lazy">
-            <div class="overlay">Modern BedRoom</div>
-        </div>
-
-        <div class="item kitchen">
-            <img src="static/images/SF-KIDS STUDY 1.jpg.jpeg" alt="" loading="lazy">
-            <div class="overlay">Luxury Kitchen</div>
-        </div>
-
-        <div class="item dining">
-            <img src="static/images/TF-DINING 1.jpg.jpeg" alt="" loading="lazy">
-            <div class="overlay">Classic Dining</div>
-        </div>
-
-        <div class="item bedroom">
-            <img src="static/images/bedroom2.jpg" alt="" loading="lazy">
-            <div class="overlay">Modern BedRoom</div>
-        </div>
-
-        <div class="item dining">
-            <img src="static/images/FF - DINING 1.jpg.jpeg" alt="" loading="lazy">
-            <div class="overlay">Classic Dining</div>
-        </div>
-
-        <div class="item living">
-            <img src="static/images/living2.jpg" alt="" loading="lazy">
-            <div class="overlay">Living Room</div>
-        </div>
-
-         <div class="item kitchen">
-            <img src="static/images/kichen2.jpg" alt="" loading="lazy">
-            <div class="overlay">Luxury Kitchen</div>
-        </div>
-
-         <div class="item dining">
-            <img src="static/images/TF-DINING.jpg.jpeg" alt="" loading="lazy">
-            <div class="overlay">Classic Dining</div>
-        </div>
-
-        <div class="item bedroom">
-            <img src="static/images/bedroom1.jpg" alt="" loading="lazy">
-            <div class="overlay">Modern BedRoom</div>
-        </div>
-
-
-    </div>
-
-    <section class="why-choose">
-        <!-- LEFT SIDE -->
-        <div class="left" data-aos="fade-right">
-            <h1><i class="fa-solid fa-circle" data-aos="zoom-in"></i>Why Choose Us</h1>
-            <h2 data-aos="zoom-in">Why Choose Builtline Interiors?</h2>
-
-            <ul>
-            <li><i class="fa-solid fa-check"></i> Expert team with modern design thinking</li>
-            <li><i class="fa-solid fa-check"></i>High-quality materials and premium finish</li>
-            <li><i class="fa-solid fa-check"></i> Customized designs for every space</li>
-            <li><i class="fa-solid fa-check"></i> End-to-end project management</li>
-            <li><i class="fa-solid fa-check"></i> On-time delivery with transparency</li>
-            </ul>
-
-            <p>
-            Enhance your home with modern, elegant, and highly functional interior designs. We combine creativity with quality craftsmanship to create beautiful spaces that truly reflect your style and comfort.
-            Transform your home with smart, stylish, and functional interiors. 
-            We bring creativity and quality together to build spaces you love.
-            </p>
-        </div>
-
-        <!-- RIGHT SIDE -->
-        <div class="right" data-aos="fade-left">
-            <div class="image-card"> 
-            <img id="sliderImage" src="static/images/living2.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="process-section">
-    <div class="process">
-
-        <h2 data-aos="zoom-in">Our Working Process</h2>
-
-        <!-- STEP 1 -->
-        <div class="step" data-aos="fade-right">
-            <!-- LEFT SIDE (2 IMAGES) -->
-            <div class="image-side">
-            <img src="static/images/living2.jpg" class="main-img" loading="lazy">
-            <img src="static/images/interior-design-consultant.webp" class="overlay-img" loading="lazy">
-            </div>
-
-            <!-- RIGHT SIDE -->
-            <div class="content" >
-            <span>01</span>
-            <h3>Design Consultation</h3>
-            <p>Meet our experts to understand your vision and requirements.</p>
-            </div>
-
-        </div>
-
-        <!-- STEP 2 -->
-        <div class="step reverse" data-aos="fade-left">
-            
-            <div class="image-side">
-            <img src="static/images/living2.jpg" class="main-img" loading="lazy">
-            <img src="static/images/planning.avif" class="overlay-img" loading="lazy">
-            </div>
-
-            <div class="content">
-            <span>02</span>
-            <h3>Planning & Concept</h3>
-            <p>We create layouts and 3D concepts for your space.</p>
-            </div>
-
-        </div>
-
-         <!-- STEP 3 -->
-        <div class="step" data-aos="fade-right">
-            
-            <!-- LEFT SIDE (2 IMAGES) -->
-            <div class="image-side">
-            <img src="static/images/living2.jpg" class="main-img" loading="lazy">
-            <img src="static/images/material_selection.jpg" class="overlay-img" loading="lazy">
-            </div>
-
-            <!-- RIGHT SIDE -->
-            <div class="content">
-            <span>03</span>
-            <h3>Material Selection</h3>
-            <p>Select finishes, colors, and materials for your interiors.<</p>
-            </div>
-
-        </div>
-
-        <!-- STEP 4 -->
-        <div class="step reverse" data-aos="fade-left">
-            
-            <div class="image-side">
-            <img src="static/images/living2.jpg" class="main-img" loading="lazy"> 
-            <img src="static/images/exceuction.png" class="overlay-img" loading="lazy">
-            </div>
-
-            <div class="content">
-                <span>04</span>
-                <h3>Execution & Installation</h3>
-                <p>We execute the design with high quality and precision.</p>
-            </div>
-
-        </div>
-
-         <!-- STEP 5 -->
-        <div class="step" data-aos="fade-right">
-            
-            <!-- LEFT SIDE (2 IMAGES) -->
-            <div class="image-side">
-            <img src="static/images/living2.jpg" class="main-img" loading="lazy">
-            <img src="static/images/handover.jpg" class="overlay-img" loading="lazy">
-            </div>
-
-            <!-- RIGHT SIDE -->
-            <div class="content">
-                <span>05</span>
-                <h3>Final Handover</h3>
-                <p>We deliver a ready-to-move beautiful interior space.</p>
-            </div>
-
-        </div>
-
-    
-    </div>
-    </section>
-
-    <section  class="review-section">
-        <div class="review-container">
-           
-
-            <div class="frame">
-                <div class="photo-box" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200" alt="Interior" loading="lazy">
-
-                    <div class="controls">
-                        <button class="arrow" id="prev">←</button>
-                        <button class="arrow" id="next">→</button>
+                        <div class="controls">
+                            <button class="arrow" id="prev">←</button>
+                            <button class="arrow" id="next">→</button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="slider-box">
-                     <div class="review-title" data-aos="zoom-in">
-                        <h2>What Our Customers Say About Us</h2>
-                    </div>
-                    <div class="track" id="track" data-aos="fade-left">
-                        
-                        <div class="review-card">
-                            <span class="quote">“</span>
-                            <p>Working with your design team was an absolute pleasure. The attention to detail exceeded expectations.</p>
-                            <div class="profile">
-                                <img src="https://i.pravatar.cc/100?u=1" loading="lazy">
-                                <div class="user-meta">
-                                    <strong>Sophie Carter</strong><br>
-                                    <span>New York, USA</span>
+                    <div class="slider-box">
+                        <div class="review-title" data-aos="zoom-in">
+                            <h2>What Our Customers Say About Us</h2>
+                        </div>
+                        <div class="track" id="track" data-aos="fade-left">
+                            
+                            <div class="review-card">
+                                <span class="quote">“</span>
+                                <p>Working with your design team was an absolute pleasure. The attention to detail exceeded expectations.</p>
+                                <div class="profile">
+                                    <img src="https://i.pravatar.cc/100?u=1" loading="lazy">
+                                    <div class="user-meta">
+                                        <strong>Sophie Carter</strong><br>
+                                        <span>New York, USA</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="review-card">
-                            <span class="quote">“</span>
-                            <p>Exceptional service! From the initial consultation to the final reveal, your team was professional.</p>
-                            <div class="profile">
-                                <img src="https://i.pravatar.cc/100?u=2" loading="lazy">
-                                <div class="user-meta">
-                                    <strong>James Bennett</strong><br>
-                                    <span>Toronto, Canada</span>
+                            <div class="review-card">
+                                <span class="quote">“</span>
+                                <p>Exceptional service! From the initial consultation to the final reveal, your team was professional.</p>
+                                <div class="profile">
+                                    <img src="https://i.pravatar.cc/100?u=2" loading="lazy">
+                                    <div class="user-meta">
+                                        <strong>James Bennett</strong><br>
+                                        <span>Toronto, Canada</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="review-card">
-                            <span class="quote">“</span>
-                            <p>The quality of the materials and the final finish is outstanding. Highly recommend this team.</p>
-                            <div class="profile">
-                                <img src="https://i.pravatar.cc/100?u=3" loading="lazy">
-                                <div class="user-meta">
-                                    <strong>Emma Watson</strong><br>
-                                    <span>London, UK</span>
+                            <div class="review-card">
+                                <span class="quote">“</span>
+                                <p>The quality of the materials and the final finish is outstanding. Highly recommend this team.</p>
+                                <div class="profile">
+                                    <img src="https://i.pravatar.cc/100?u=3" loading="lazy">
+                                    <div class="user-meta">
+                                        <strong>Emma Watson</strong><br>
+                                        <span>London, UK</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                          <div class="review-card">
-                            <span class="quote">“</span>
-                            <p>Working with your design team was an absolute pleasure. The attention to detail exceeded expectations.</p>
-                            <div class="profile">
-                                <img src="https://i.pravatar.cc/100?u=1" loading="lazy">
-                                <div class="user-meta">
-                                    <strong>Sophie Carter</strong><br>
-                                    <span>New York, USA</span>
+                            <div class="review-card">
+                                <span class="quote">“</span>
+                                <p>Working with your design team was an absolute pleasure. The attention to detail exceeded expectations.</p>
+                                <div class="profile">
+                                    <img src="https://i.pravatar.cc/100?u=1" loading="lazy">
+                                    <div class="user-meta">
+                                        <strong>Sophie Carter</strong><br>
+                                        <span>New York, USA</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="review-card">
-                            <span class="quote">“</span>
-                            <p>Exceptional service! From the initial consultation to the final reveal, your team was professional.</p>
-                            <div class="profile">
-                                <img src="https://i.pravatar.cc/100?u=2" loading="lazy">
-                                <div class="user-meta">
-                                    <strong>James Bennett</strong><br>
-                                    <span>Toronto, Canada</span>
+                            <div class="review-card">
+                                <span class="quote">“</span>
+                                <p>Exceptional service! From the initial consultation to the final reveal, your team was professional.</p>
+                                <div class="profile">
+                                    <img src="https://i.pravatar.cc/100?u=2" loading="lazy">
+                                    <div class="user-meta">
+                                        <strong>James Bennett</strong><br>
+                                        <span>Toronto, Canada</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="review-card">
-                            <span class="quote">“</span>
-                            <p>The quality of the materials and the final finish is outstanding. Highly recommend this team.</p>
-                            <div class="profile">
-                                <img src="https://i.pravatar.cc/100?u=3" loading="lazy">
-                                <div class="user-meta">
-                                    <strong>Emma Watson</strong><br>
-                                    <span>London, UK</span>
+                            <div class="review-card">
+                                <span class="quote">“</span>
+                                <p>The quality of the materials and the final finish is outstanding. Highly recommend this team.</p>
+                                <div class="profile">
+                                    <img src="https://i.pravatar.cc/100?u=3" loading="lazy">
+                                    <div class="user-meta">
+                                        <strong>Emma Watson</strong><br>
+                                        <span>London, UK</span>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
-                    </div>
-                </div>
-
-            
-            </div>
-        </div>
-    </section>
-
-    <section class="cta">
-        <div class="cta-content">
-            <h2>Ready to Transform Your Home?</h2>
-            <p>Let’s create your dream space with style and comfort.</p>
-            
-            <div class="cta-buttons">
-            <a href="contact.html" class="btn-primary">Get Free Consultation</a>
-            <a class="btn-secondary" href="tel:+91 9148498588">Call Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <section class="footer">
-        <footer class="site-footer">
-            <div class="footer-top">
-                <div class="footer-card">
-                    <span>Get connected with us on social networks:</span>
-                    <div class="social-icons">
-                        <!-- From Uiverse.io by wilsondesouza --> 
-                        <ul class="example-2">
-
-                            <li class="icon-content">
-                                <a
-                                href="https://linkedin.com/"
-                                aria-label="LinkedIn"
-                                data-social="linkedin"
-                                class="linkedin"
-                                >
-                                <div class="filled"></div>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    class="bi bi-linkedin"
-                                    viewBox="0 0 16 16"
-                                    xml:space="preserve"
-                                >
-                                    <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                                    fill="currentColor"
-                                    ></path>
-                                </svg>
-                                </a>
-                                <div class="tooltip">LinkedIn</div>
-                            </li>
-
-                            <li class="icon-content">
-                                <a
-                                data-social="facebook"
-                                aria-label="Facebook"
-                                href="https://www.facebook.com/"
-                                class="face"
-                                >
-                                <div class="filled"></div>
-                                <svg
-                                    xml:space="preserve"
-                                    viewBox="0 0 24 24"
-                                    class="bi bi-facbook"
-                                    fill="currentColor"
-                                    height="24"
-                                    width="24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                    fill="currentColor"
-                                    d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
-                                    ></path>
-                                </svg>
-                                </a>
-                                <div class="tooltip">Facebook</div>
-                            </li>
-
-                            <li class="icon-content">
-                                <a
-                                href="https://www.instagram.com/"
-                                aria-label="Instagram"
-                                data-social="instagram"
-                                class="insta"
-                                >
-                                <div class="filled"></div>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    class="bi bi-instagram"
-                                    viewBox="0 0 16 16"
-                                    xml:space="preserve"
-                                >
-                                    <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                                    fill="currentColor"
-                                    ></path>
-                                </svg>
-                                </a>
-                                <div class="tooltip">Instagram</div>
-                            </li>
-
-                            <li class="icon-content">
-                                <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube" class="youtube">
-                                <div class="filled"></div>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    class="bi bi-youtube"
-                                    viewBox="0 0 16 16"
-                                    xml:space="preserve"
-                                >
-                                    <path
-                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-                                    fill="currentColor"
-                                    ></path>
-                                </svg>
-                                </a>
-                                <div class="tooltip">Youtube</div>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-main">
-                <div class="footer-card footer-grid">
-                    
-                    <div class="col cols-img">
-                        <div class="col-image"><img src="static/images/BUILTLINE1.jpg.jpeg" alt=""></div>
-                        <p>Builtline Interior Nivas is Bengaluru’s premier interior design studio, specializing in transforming residential and commercial spaces into functional works of art. With a focus on quality craftsmanship and innovative modular solutions, we bring your dream home to life with precision and style</p>
                     </div>
 
-                    <div class="col">
-                        <h3>SERVICES</h3>
-                        <div class="underline"></div>
-                        <ul class="links">
-                            <li><a href="living-room-interior.html">Living Room</a></li>
-                            <li><a href="bed-room-interior.html">BedRoom</a></li>
-                            <li><a href="modular-kitchen-interior.html">Kitchen</a></li>
-                            <li><a href="pooja-room-interior.html">Pooja Room</a></li>
-                            <li><a href="commertail-interiors.html">Commercial Interiors</a></li>
-                            <li><a href="dining-interior.html">Dining</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <h3>USEFUL LINKS</h3>
-                        <div class="underline"></div>
-                        <ul class="links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <h3>CONTACT</h3>
-                        <div class="underline"></div>
-                        <ul class="contact-info">
-                            <li><i class="fa-regular fa-house"></i> New York, NY 10012, US</li>
-                            <li><i class="fa-regular fa-envelope"></i> builtlineinteriornivas@gmail.com</li>
-                            <li><i class="fa-solid fa-phone"></i> +91 91484 98588</li>
-                            <div class="google-map">
-                                <h3>Our Location</h3>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5624723604224!2d77.5683234!3d12.999812499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17f883f972d7%3A0xa25b304370bcc9e!2sBuiltline%20Construction!5e0!3m2!1sen!2sin!4v1775890442083!5m2!1sen!2sin" width="300" height="200" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
-                            </div>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-    </section>
-
-    <div class="copyright">
-        <p> © <span id="year"></span> BUILTLINE INTRIOR NIVAS® | A BRAND OF BUILTLINE INTERIOR NIVAS   <br>       </p> 
-        <p>Build by : <a href="https://github.com/pythonprogrammerRaji">Rajeshwari</a></p>
-    </div>
-     <div class="contact-panel">
-
-                <a href="tel:+919148498588" class="panel-item">
-                    <i class="fas fa-phone"></i>
-                </a>
-
-                <a  href="https://wa.me/919148498588" 
-                    target="_blank" class="panel-item">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
                 
+                </div>
+            </div>
+        </section>
 
-                <a href="https://www.google.com/maps/search/?api=1&query=Builtline+Construction+Bangalore" target="_blank" class="panel-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                </a>
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Home?</h2>
+                <p>Let’s create your dream space with style and comfort.</p>
+                
+                <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">Get Free Consultation</a>
+                <a class="btn-secondary" href="tel:+91 9148498588">Call Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="footer">
+            
+            <footer class="site-footer">
+                <div class="footer-top">
+                    <div class="footer-card">
+                        <span>Get connected with us on social networks:</span>
+                        <div class="social-icons">
+                            <!-- From Uiverse.io by wilsondesouza --> 
+                            <ul class="example-2">
+
+                                <li class="icon-content">
+                                    <a
+                                    href="https://linkedin.com/"
+                                    aria-label="LinkedIn"
+                                    data-social="linkedin"
+                                    class="linkedin"
+                                    >
+                                    <div class="filled"></div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-linkedin"
+                                        viewBox="0 0 16 16"
+                                        xml:space="preserve"
+                                    >
+                                        <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                        fill="currentColor"
+                                        ></path>
+                                    </svg>
+                                    </a>
+                                    <div class="tooltip">LinkedIn</div>
+                                </li>
+
+                                <li class="icon-content">
+                                    <a
+                                    data-social="facebook"
+                                    aria-label="Facebook"
+                                    href="https://www.facebook.com/"
+                                    class="face"
+                                    >
+                                    <div class="filled"></div>
+                                    <svg
+                                        xml:space="preserve"
+                                        viewBox="0 0 24 24"
+                                        class="bi bi-facbook"
+                                        fill="currentColor"
+                                        height="24"
+                                        width="24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                        fill="currentColor"
+                                        d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
+                                        ></path>
+                                    </svg>
+                                    </a>
+                                    <div class="tooltip">Facebook</div>
+                                </li>
+
+                                <li class="icon-content">
+                                    <a
+                                    href="https://www.instagram.com/"
+                                    aria-label="Instagram"
+                                    data-social="instagram"
+                                    class="insta"
+                                    >
+                                    <div class="filled"></div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-instagram"
+                                        viewBox="0 0 16 16"
+                                        xml:space="preserve"
+                                    >
+                                        <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                        fill="currentColor"
+                                        ></path>
+                                    </svg>
+                                    </a>
+                                    <div class="tooltip">Instagram</div>
+                                </li>
+
+                                <li class="icon-content">
+                                    <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube" class="youtube">
+                                    <div class="filled"></div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-youtube"
+                                        viewBox="0 0 16 16"
+                                        xml:space="preserve"
+                                    >
+                                        <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                                        fill="currentColor"
+                                        ></path>
+                                    </svg>
+                                    </a>
+                                    <div class="tooltip">Youtube</div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-main">
+                    
+                    <div class="footer-card footer-grid">
+                        
+                        <div class="col cols-img">
+                            <div class="col-image"><img src="static/images/BUILTLINE1.jpg.jpeg" alt=""></div>
+                            <p>Builtline Interior Nivas is Bengaluru’s premier interior design studio, specializing in transforming residential and commercial spaces into functional works of art. With a focus on quality craftsmanship and innovative modular solutions, we bring your dream home to life with precision and style</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>SERVICES</h3>
+                            <div class="underline"></div>
+                            <ul class="links">
+                                <li><a href="living-room-interior.html">Living Room</a></li>
+                                <li><a href="bed-room-interior.html">BedRoom</a></li>
+                                <li><a href="modular-kitchen-interior.html">Kitchen</a></li>
+                                <li><a href="pooja-room-interior.html">Pooja Room</a></li>
+                                <li><a href="commertail-interiors.html">Commercial Interiors</a></li>
+                                <li><a href="dining-interior.html">Dining</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <h3>USEFUL LINKS</h3>
+                            <div class="underline"></div>
+                            <ul class="links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <h3>CONTACT</h3>
+                            <div class="underline"></div>
+                            <ul class="contact-info">
+                                <li><i class="fa-regular fa-house"></i> New York, NY 10012, US</li>
+                                <li><i class="fa-regular fa-envelope"></i> builtlineinteriornivas@gmail.com</li>
+                                <li><i class="fa-solid fa-phone"></i> +91 91484 98588</li>
+                                <div class="google-map">
+                                    <h3>Our Location</h3>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5624723604224!2d77.5683234!3d12.999812499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17f883f972d7%3A0xa25b304370bcc9e!2sBuiltline%20Construction!5e0!3m2!1sen!2sin!4v1775890442083!5m2!1sen!2sin" width="300" height="200" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </footer>
+        
+        </section>
+
+        <div class="copyright">
+            <p> © <span id="year"></span> BUILTLINE INTRIOR NIVAS® | A BRAND OF BUILTLINE INTERIOR NIVAS<br></p> 
+            <p>Build by : <a href="https://github.com/pythonprogrammerRaji">Rajeshwari</a></p>
+        </div>
+
+        <div class="contact-panel">
+            <a href="tel:+919148498588" class="panel-item">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a  href="https://wa.me/919148498588" 
+                        target="_blank" class="panel-item">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Builtline+Construction+Bangalore" target="_blank" class="panel-item">
+                <i class="fas fa-map-marker-alt"></i>
+            </a>
 
         </div>
 
-    <!--  -->
+        <!--  -->
+            </div>
         </div>
-</section>
+    </section>
 
     <script src="static/css/scrtpt.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
