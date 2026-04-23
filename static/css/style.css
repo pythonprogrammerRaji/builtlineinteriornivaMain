@@ -266,10 +266,7 @@ header{
   top: 40%;
   left: 100px;
   transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  
 }
 .hero-tag {
     background: rgba(255,255,255,0.2);
@@ -2146,7 +2143,7 @@ ul {
     width: 100vw;
     text-align: center;
     width: 100vw;   /* force full screen */
-  margin-left: calc(-50vw + 50%);
+    margin-left: calc(-50vw + 50%);
     
 }
 .living-hero{
