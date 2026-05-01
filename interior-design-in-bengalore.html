@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serene Pooja room designs that blend traditional values with modern aesthetics. Builtline Interior Nivas specializes in CNC work and marble finishes in Bangalore.">
+    <link rel="icon" type="image/png" href="static/images/BUILTLINE1.jpg.jpeg">
+    <title>Serene & Traditional Pooja Room Interiors | Builtline Interior Nivas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+     <link rel="canonical" href="https://builtlineinteriornivas.com/pooja-room-interior.html" />
+</head>
+<body>
+<section class="section-container">
+   
+        <header class="navbar" data-aos="zoom-in" data-aos-delay="200">
+            <div class="container">
+                    <div class="nav-left">
+                       <img src="static/images/BUILTLINE.png" alt="">
+                    </div>
+
+                    <ul class="nav-links" id="navLinks" style="color: #000;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a>
+                           <ul>
+                                <li><a href="living-room-interior.html">Living Room</a></li>
+                                <li><a href="bed-room-interior.html">Bed Room</a></li>
+                                <li><a href="modular-kitchen-interior.html">Modular Kitchen</a></li>
+                                <li><a href="pooja-room-interior.html">Pooja Room</a></li>
+                                <li><a href="dining-interior.html">Dining Room</a></li>
+                                <li><a href="commerial-interiors.html">Commercial Interior</a></li>  </ul>
+
+                        <li><a href="interior-design-in-bengalore.html">Blogs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
+
+                    </ul>
+
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                    <a class="quote-btn" href="contact.html" >
+                        Get A Free Quote
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+            </div>
+        </header>
+        
+       <div class="container">
+
+         <section class="blog-section text-white d-flex align-items-center">
+            <div class="blog-content">
+                <h1 class="fw-bold">Create Elegant Interiors That Inspire Everyday Living</h1>
+                <p class="mt-3">
+                Explore thoughtful interior design ideas, modern styles,
+                  and smart solutions to elevate your everyday living.
+                </p>
+            </div>
+        </section>
+
+        <section class="living-container">
+            <div class="breadcrumb" data-aos="fade-left">
+                <a href="index.html">Home</a>  &gt; 
+                <span>Interior design in Bengalore</span>
+            </div>
+        </section>
+
+     
+
+        <section class="p-4 bg-light">
+            <div class="mb-4">
+                <h3 class="fw-semibold">Latest Interior Design Ideas</h3>
+                <p class="text-muted mb-0">
+                    Explore modern home interiors, smart space solutions,
+                    and cost-effective design ideas for every home.
+                </p>
+            </div>
+
+            <div class="container-fluid py-4">
+                <div class="row">
+                    <!-- LEFT SIDEBAR -->
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <h6>Keyword Search</h6>
+                            <input type="text" class="w-100 p-1 form-control" placeholder="Search the keyword" id="searchInput" />         
+                        </div>
+                        <div class="linkContainer">
+                            <a href="bed-room-interior.html">Bedroom Interior Design</a>
+                            <a href="commerial-interiors.html">Commercial Interiors</a>
+                            <a href="living-room-interior.html">Living Interior</a>
+                            <a href="modular-kitchen-interior.html"> Modular Kitchen Interior</a>
+                            <a href="pooja-room-interior.html">Pooja Interior</a>
+                            <a href="dining-interior.html">Dining Room Interior</a>
+                            <p id="notFound" class="text-muted mt-2" style="display:none;">
+                                Keyword not found
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT -->
+
+
+                    <div class="col-md-9">
+                        <div class="w-100 fliter-btn mb-4"> 
+                            <button onclick="filterBlogs('all')" class="btn btn-outline-dark btn-sm w-40 d-inline m-2 ">All</button>
+                            <button onclick="filterBlogs('living')" class="btn btn-outline-dark btn-sm w-30 d-inline m-2">Living</button>
+                            <button onclick="filterBlogs('bedroom')" class="btn btn-outline-dark btn-sm w-30 d-inline  m-2">Bedroom</button>
+                            <button onclick="filterBlogs('kitchen')" class="btn btn-outline-dark btn-sm w-30 d-inline m-2">Kitchen</button>
+                            <button onclick="filterBlogs('bathroom')" class="btn btn-outline-dark btn-sm w-30 d-inline  m-2">Bathroom</button>
+                            <button onclick="filterBlogs('commercial')" class="btn btn-outline-dark btn-sm w-30 d-inline  m-2">Commercial</button>
+                            <button onclick="filterBlogs('other')" class="btn btn-outline-dark btn-sm w-30 d-inline m-2">Other</button>
+                        </div>
+
+                        <div class="row g-4" id="blogContainer"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+    
+                <!-- Left Image -->
+                <div class="contact-image">
+                    <img src="static/images/TF-POOJA ROOM 1.jpg.jpeg" alt="Contact" loading="lazy">
+                </div>
+
+                <!-- Right Form -->
+                <div class="interior-form">
+                    <center><h3>Talk To Our <br> Interior Designer Experts</h3></center>
+                    <p>Let’s create your dream space with style and comfort.</p>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <input type="text" placeholder="Phone Number">
+                        <textarea placeholder="Your Message" cols="3" rows="5"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+        </section>
+
+        <div class="contact-panel">
+
+                <a href="tel:+919148498588" class="panel-item">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <a  href="https://wa.me/919148498588" 
+                    target="_blank" class="panel-item">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Builtline+Construction+Bangalore" target="_blank" class="panel-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+        </div>
+
+    <!--  -->
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="static/css/blog.js"></script>
+    <script src="static/css/scrtpt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+    <script>
+    const container = document.getElementById("blogContainer");
+
+    function renderBlogs(data) {
+    container.innerHTML = "";
+    data.forEach(function(blog) {
+        var col = document.createElement("div");
+        col.className = "col-md-4";
+        col.innerHTML =
+            '<div class="blog-card h-100" onclick="window.location.href=\'blog-post.html?slug=' + blog.slug + '\'" style="cursor:pointer;">' +
+                '<img src="' + blog.image + '" style="height:180px;width:100%;object-fit:cover;">' +
+                '<div class="card-body p-3">' +
+                    '<h5>' + blog.title + '</h5>' +
+                    '<p>' + blog.desc + '</p>' +
+                    '<a class="btn btn-dark btn-sm">Read More</a>' +
+                '</div>' +
+            '</div>';
+        container.appendChild(col);
+    });
+}
+renderBlogs(blogs);
+
+console.log(blogs[0].slug)
+        // filter function
+    function filterBlogs(category) {
+        if (category === "all") {
+            renderBlogs(blogs);
+        } else {
+            const filtered = blogs.filter(blog => blog.category === category);
+            renderBlogs(filtered);
+        }
+    }
+
+    // show all initially
+   
+
+   
+
+    // search links
+    const input = document.getElementById("searchInput");
+    const links = document.querySelectorAll(".linkContainer a")
+    const notFound = document.getElementById("notFound");
+
+    input.addEventListener("keyup", function(){
+        const value = input.value.toLowerCase();
+
+        links.forEach(link => {
+            const text = link.textContent.toLowerCase();
+
+            if(text.includes(value)){
+                link.style.display = "block";
+            }
+            else{
+                link.style.display = "none"
+
+            }
+        });
+
+         let anyVisible = Array.from(links).some(link => link.style.display !== "none");
+
+         if (!anyVisible && value !== "") {
+            notFound.style.display = "block";
+        } else {
+            notFound.style.display = "none";
+        }
+  
+
+    });
+    
+    </script>
+    
+
+    <script>
+        AOS.init({
+            duration: 1000,     // animation speed
+            once: false,        // 🔥 repeat animation on scroll
+            offset: 120,        // trigger earlier
+             easing: 'ease-in'
+        });
+    </script>
+
+
+</body>
+</html>
