@@ -42,7 +42,7 @@
                     </ul>
 
                 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-                    <a class="quote-btn" href="contact.html" >
+                    <a class="quote-btn" href="#contact" >
                         Get A Free Quote
                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
                     </a>
@@ -75,18 +75,19 @@
                 </div>
 
                 <!-- Right Form -->
-                <div class="interior-form">
+               <div class="interior-form">
                     <center><h3>Talk To Our <br> Interior Designer Experts</h3></center>
                     <p>Let’s create your dream space with style and comfort.</p>
-                    <form>
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                        <input type="text" placeholder="Phone Number">
-                        <textarea placeholder="Your Message" cols="3" rows="5"></textarea>
+                    <form id="contact-form" id="contact-form">
+                        <!-- Add 'name' attributes so EmailJS can read the data -->
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="text" id="number" placeholder="Phone Number">
+                        <input type="text" id="location" placeholder="Location">
+                        <textarea id="message" placeholder="Your Message" cols="3" rows="5" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-
         </section>
 
         <div class="contact-panel">
@@ -109,16 +110,6 @@
     <!--  -->
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -145,14 +136,50 @@
         }
     </script>
 
-    <script>
-        AOS.init({
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     <script>               
+            emailjs.init({
+                publicKey: 'pXIyHvEb8y3LNoEPn',
+            });
+
+
+                    
+            document.getElementById("contact-form").addEventListener("submit", function(e){
+                e.preventDefault();
+
+                    let fullname = document.getElementById("name").value.trim();
+                    let email = document.getElementById("email").value.trim();
+                    let number = document.getElementById("number").value.trim();
+                    let location = document.getElementById("location").value;
+                    let message = document.getElementById("message").value.trim();
+
+                    let params = {
+                        full_name: fullname,
+                        from_number: number,
+                        from_email: email,
+                        from_location:location,
+                        message: message
+                    }
+
+                    emailjs
+                    .send('service_gyzkhjq', 'template_159y1f4', params)
+                    .then(()=>{
+                        alert('Email Successfully Submitted ✅')
+                        document.getElementById("form").reset();    
+                    })
+                    .catch(()=>{
+                       alert("Thank You...✅😊😀")
+                    })
+            })
+            
+           AOS.init({
             duration: 1000,     // animation speed
             once: false,        // 🔥 repeat animation on scroll
             offset: 120,        // trigger earlier
              easing: 'ease-in'
         });
-    </script>
+    
+     </script>
 
 
 </body>
