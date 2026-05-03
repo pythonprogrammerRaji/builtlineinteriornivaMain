@@ -170,18 +170,43 @@
                 </div>
 
                 <!-- Right Form -->
-                <div class="interior-form">
+               <div class="interior-form">
                     <center><h3>Talk To Our <br> Interior Designer Experts</h3></center>
                     <p>Let’s create your dream space with style and comfort.</p>
+                    <form id="contact-form" id="contact-form">
+                        <!-- Add 'name' attributes so EmailJS can read the data -->
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="text" id="number" placeholder="Phone Number">
+                        <input type="text" id="location" placeholder="Location">
+                        <textarea id="message" placeholder="Your Message" cols="3" rows="5" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            offset: 120,        // trigger earlier
+             easing: 'ease-in'
+        });
+    
+     </script>
+    <form id="contact-form">
+        <!-- Add 'name' attributes so EmailJS can read the data -->
+        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input type="email" name="user_email" placeholder="Your Email" required>
+        <input type="text" name="phone_number" placeholder="Phone Number">
+        <input type="text" name="location" placeholder="Location">
+        <textarea name="message" placeholder="Your Message" cols="3" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
                     <form>
                         <input type="text" placeholder="Your Name">
                         <input type="email" placeholder="Your Email">
                         <input type="text" placeholder="Phone Number">
+                        <input type="text" placeholder="Location">
                         <textarea placeholder="Your Message" cols="3" rows="5"></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-
 
             </section>
         
@@ -218,14 +243,74 @@
     <script src="static/css/scrtpt.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init({
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     <script>               
+            emailjs.init({
+                publicKey: 'pXIyHvEb8y3LNoEPn',
+            });
+
+
+                    
+            document.getElementById("contact-form").addEventListener("submit", function(e){
+                e.preventDefault();
+
+                    let fullname = document.getElementById("name").value.trim();
+                    let email = document.getElementById("email").value.trim();
+                    let number = document.getElementById("number").value.trim();
+                    let location = document.getElementById("location").value;
+                    let message = document.getElementById("message").value.trim();
+
+                    let params = {
+                        full_name: fullname,
+                        from_number: number,
+                        from_email: email,
+                        from_location:location,
+                        message: message
+                    }
+
+                    emailjs
+                    .send('service_gyzkhjq', 'template_159y1f4', params)
+                    .then(()=>{
+                        alert('Email Successfully Submitted ✅')
+                        document.getElementById("form").reset();    
+                    })
+                    .catch(()=>{
+                        alert("Email can not send!")
+                    })
+            })
+            
+                
+
+
+
+
+           AOS.init({
             duration: 1000,     // animation speed
             once: false,        // 🔥 repeat animation on scroll
             offset: 120,        // trigger earlier
              easing: 'ease-in'
         });
-    </script>
+    
+     </script>
+    <form id="contact-form">
+        <!-- Add 'name' attributes so EmailJS can read the data -->
+        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input type="email" name="user_email" placeholder="Your Email" required>
+        <input type="text" name="phone_number" placeholder="Phone Number">
+        <input type="text" name="location" placeholder="Location">
+        <textarea name="message" placeholder="Your Message" cols="3" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="text" placeholder="Location">
+                        <textarea placeholder="Your Message" cols="3" rows="5"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
 
 
 </body>
