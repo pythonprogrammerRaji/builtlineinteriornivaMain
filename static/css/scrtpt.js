@@ -1,3 +1,5 @@
+
+
 const videos = document.querySelectorAll(".bg-video");
 let windex = 0;
 
@@ -58,6 +60,9 @@ function closeForm() {
 }
 
 // counter the number
+// emailjs.init({
+//     publicKey: 'pXIyHvEb8y3LNoEPn',
+// });
 
 
 let counters = document.querySelectorAll(".count");
@@ -188,3 +193,9 @@ function openModal(id) {
 function closeModal(id) {
     document.getElementById(id).classList.remove("active");
 }
+
+// emailjs
+
+
+
+   
