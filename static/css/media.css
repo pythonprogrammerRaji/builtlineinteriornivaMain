@@ -10,12 +10,16 @@
   }
   .navbar {
       background: rgba(0,0,0,0.5); 
-      padding:18px 20px;
+      padding:18px 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
 
+  }
+  .nav-left{
+    position: relative;
+    left: -60px;
   }
 
   .nav-links {
@@ -490,6 +494,10 @@
     
   }
 
+  /* .blogs page */
+  .blog-content h1{
+    font-size: 2rem;
+  }
 }
 @media (min-width: 769px) and (max-width: 1000px){
     .navbar{
