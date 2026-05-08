@@ -2156,7 +2156,8 @@ ul {
 }
 
 /* living page */
-.living-hero, .kitchen-hero, .bedroom-hero, .dinning-hero, .pooja-hero, .commerial-hero{
+.living-hero, .kitchen-hero, .bedroom-hero, .dinning-hero, .pooja-hero, .commerial-hero,
+.home-interior-hero, .turnkey-interior-hero, .corporate-interior-hero{
     height: 110vh;
     display: flex;
     align-items: center;
@@ -2164,9 +2165,33 @@ ul {
     color: #fff;
     width: 100vw;
     text-align: center;
-    width: 100vw;   /* force full screen */
+    width: 100vw; 
     margin-left: calc(-50vw + 50%);
     
+}
+.home-interior-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/home-img.avif) ;
+  background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    inset: 0;
+    
+    
+}
+.turnkey-interior-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/turnkey-interior.jpg) ;
+  background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    inset: 0;
+    
+}   
+.corporate-interior-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/office-interior.jpg) ;
+  background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    inset: 0;
 }
 .living-hero{
   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/living2.jpg) ;
