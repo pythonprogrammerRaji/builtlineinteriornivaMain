@@ -488,7 +488,7 @@ cursor:pointer;
 }
 
 /* Inputs */
-.enquiry-form input {
+.enquiry-form input, .enquiry-form textarea {
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
@@ -2157,7 +2157,9 @@ ul {
 
 /* living page */
 .living-hero, .kitchen-hero, .bedroom-hero, .dinning-hero, .pooja-hero, .commerial-hero,
-.home-interior-hero, .turnkey-interior-hero, .corporate-interior-hero{
+.home-interior-hero, .turnkey-interior-hero, .corporate-interior-hero, .hospital-interior-hero,
+.Minimalist-interior-hero, .residential-interior-hero, .villa-interior-hero, .restaurant-interior-hero,
+.retail-interior-hero, .college-interior-hero {
     height: 110vh;
     display: flex;
     align-items: center;
@@ -2167,75 +2169,67 @@ ul {
     text-align: center;
     width: 100vw; 
     margin-left: calc(-50vw + 50%);
+     background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    inset: 0;
     
 }
 .home-interior-hero{
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/home-img.avif) ;
-  background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
-    inset: 0;
-    
-    
 }
+
 .turnkey-interior-hero{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/turnkey-interior.jpg) ;
-  background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
-    inset: 0;
-    
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/turnkey-interior.jpg) ; 
 }   
 .corporate-interior-hero{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/office-interior.jpg) ;
-  background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
-    inset: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/office-interior.jpg) 
+}
+.hospital-interior-hero{
+     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/hospital-interior.jpg) ;
+}
+.Minimalist-interior-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/mimalist.avif) ;
+}
+.residential-interior-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/living3.jpg) ;
+}
+.villa-interior-hero{
+     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/villa-interior.jpg) ;
+    
+}
+.retail-interior-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/retails-inteior.jpg) ;
+}
+.restaurant-interior-hero{
+background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/restaurant.jpg) ;
+
+}
+.college-interior-hero{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(../images/college.jpg) ;
 }
 .living-hero{
   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/living2.jpg) ;
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
-    inset: 0;
 }
 .kitchen-hero{
   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/kichen_interior.jpg) ;
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
 }
 .bedroom-hero{
     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/bedroom2.jpg) ;
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
 }
 .dinning-hero{
    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/diining1.jpg) ;
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
 }
+
          
 .pooja-hero{
   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/FF\ -\ POOJA\ ROOM\ 1.jpg.jpeg) ;
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
 }
 .commerial-hero{
      background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/hospital-interior.jpg) ;
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
 }
 .blog-section{
   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/Luxury-living-room2.jpg) ;
-    background-size: cover;
-    background-position: 0cqh;
-    background-repeat: no-repeat;
 }
 /* Content */
 .living-hero-content h1, .kitchen-hero-content h1{
@@ -3094,15 +3088,28 @@ line-height: 1.6;
     margin-left: calc(-50vw + 50%);
 
 }
-/* 
-.blogContainer::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100vw;
+.linkContainer a{
+  position: relative;
+  cursor: pointer;
+  
+}
+/* .linkContainer a::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  transition: all 0.4s ease;
+  transform: translate(-50%);
+  height: 2px;
+  background: #F2C200;
+  
 } */
-
+.linkContainer a:hover{
+  transition: all 0.5s ease-in-out;
+  transform: translateX(20%);
+  color: #F2C200;
+}
 .details-content {
     position: relative;
     z-index: 1;
