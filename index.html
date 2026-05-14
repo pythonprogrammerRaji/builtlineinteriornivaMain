@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/media.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="canonical" href="https://builtlineinteriornivas.com/" />
@@ -71,20 +72,21 @@
                 <button class="enquiry-btn" onclick="openForm()">Enquiry Now</button>
 
                 <!-- Form Panel -->
-                <div class="enquiry-form" id="enquiryForm" >
+                <form class="enquiry-form" id="enquiryForm" >
 
                     <button class="close-btn" onclick="closeForm()">Hide</button>
 
                     <h2>TALK TO A DESIGNER</h2>
 
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email Id">
-                    <input type="text" placeholder="Mobile">
-                    <input type="text" placeholder="Location">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email Id">
+                    <input type="number" id="number" placeholder="Mobile" required>
+                    <input type="text" id="location" placeholder="Location" required>
+                    <input name="" id="message" placeholder="MESSAGE"></input>
 
-                    <button class="submit-btn">Get Free Quote</button>
+                    <button class="submit-btn" type="submit">Get Free Quote</button>
 
-                </div>
+                </form>
             
         </section>
 
@@ -726,6 +728,42 @@
 
     <script src="static/css/scrtpt.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+     <script>               
+            emailjs.init({
+                publicKey: 'pXIyHvEb8y3LNoEPn',
+            });
+                    
+            document.getElementById("enquiryForm").addEventListener("submit", function(e){
+                e.preventDefault();
+
+                    let fullname = document.getElementById("name").value.trim();
+                    let email = document.getElementById("email").value.trim();
+                    let number = document.getElementById("number").value.trim();
+                    let location = document.getElementById("location").value.trim();
+                    let message = document.getElementById("message").value.trim();
+
+                    let params = {
+                        full_name: fullname,
+                        from_number: number,
+                        from_email: email,
+                        from_location:location,
+                        message: message
+                    }
+
+                    emailjs
+                    .send('service_gyzkhjq', 'template_159y1f4', params)
+                    .then(()=>{
+                        alert('Email Successfully Submitted ✅')
+                        document.getElementById("enquiryForm").reset();    
+                    })
+                    .catch(()=>{
+                        alert("Email can not send!")
+                    })
+            })
+            
+     </script>
 
     <script>
         AOS.init({
@@ -736,6 +774,6 @@
         });
     </script>
 
-
+    
 </body>
 </html>
