@@ -1,0 +1,19 @@
+RewriteEngine On
+
+RewriteRule ^livingroom-interior-design-in-bengalore\.html$ /livingroom-interior-design-in-bengaluru.html [R=301,L]
+RewriteRule ^bedroom-interior-design-in-bengalore\.html$ /bedroom-interior-design-in-bengaluru.html [R=301,L]
+RewriteRule ^modular-kitchen-interior-design-in-bengalore\.html$ /modular-kitchen-interior-design-in-bengaluru.html [R=301,L]
+RewriteRule ^poojaroom-interior-design-in-bengalore\.html$ /poojaroom-interior-design-in-bengaluru.html [R=301,L]
+RewriteRule ^dining-interior-design-in-bengalore\.html$ /dining-interior-design-in-bengaluru.html [R=301,L]
+RewriteRule ^hospital-interior-design-bengalore\.html$ /hospital-interior-design-bengaluru.html [R=301,L]
+RewriteRule ^luxury-home-interior-designers-bengalore\.html$ /luxury-home-interior-designers-bengaluru.html [R=301,L]
+RewriteRule ^minimalist-interior-design-bengalore\.html$ /minimalist-interior-design-bengaluru.html [R=301,L]
+RewriteRule ^premium-villa-interior-designers-bengalore\.html$ /premium-villa-interior-designers-bengaluru.html [R=301,L]
+RewriteRule ^school-college-interior-design-bengalore\.html$ /school-college-interior-design-bengaluru.html [R=301,L]
+RewriteRule ^restaurant-cafe-interior-design-bengalore\.html$ /restaurant-cafe-interior-design-bengaluru.html [R=301,L]
+RewriteRule ^retail-showroom-interior-design-bengalore\.html$ /retail-showroom-interior-design-bengaluru.html [R=301,L]
+RewriteRule ^turnkey-interior-solutions-bengalore\.html$ /turnkey-interior-solutions-bengaluru.html [R=301,L]
+RewriteRule ^commerial-interiors-design-bengalore\.html$ /commerial-interiors-design-bengaluru.html [R=301,L]
+
+# Redirect index.html to homepage
+RewriteRule ^index\.html$ / [R=301,L]

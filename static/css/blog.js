@@ -73,7 +73,7 @@ const blogs = [
         title: "Space Saving Furniture",
          category: "other",
         slug: "space-furniture",
-        image:  "static/images/SF-KIDS STUDY 1.jpg.jpeg",
+        image:  "static/images/SF-KIDS STUDY 1.jpg",
         desc: "Space-saving furniture ideas for small homes with smart designs."
     },
     {
@@ -269,7 +269,7 @@ const blogDetails = [
   {
     slug: "space-furniture",
     title: "Space Saving Furniture",
-    image: "static/images/SF-KIDS STUDY 1.jpg.jpeg",
+    image: "static/images/SF-KIDS STUDY 1.jpg",
     content: `
       <h2>Space Saving Furniture</h2>
       <p>Smart furniture helps maximize small spaces.</p>

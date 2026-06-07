@@ -125,11 +125,11 @@ filterSelection("all")
 // Slide the image
 
 let images = [
-    'static/images/SF-KIDS STUDY 1.jpg.jpeg',
-    'static/images/TF-DINING 1.jpg.jpeg',
+    'static/images/SF-KIDS STUDY 1.jpg',
+    'static/images/TF-DINING 1.jpg',
     'static/images/bedroom2.jpg',
     'static/images/kichen2.jpg',
-    'static/images/FF - DINING 1.jpg.jpeg'
+    'static/images/FF - DINING 1.jpg'
 ];
 
 let currentIndex = 0
