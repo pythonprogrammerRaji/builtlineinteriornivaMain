@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="static/images/builtlineinterior.webp">
     <title>About Us | Builtline Nivas — Interior Designers in Bangalore</title>
     <meta name="description" content="Learn about Builtline Nivas — a trusted interior design company in Bangalore with expertise in home, office & commercial interiors across Bengaluru.">
@@ -9,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/media.css">
-    <link rel="preload" as="image" href="images/hero-banner.webp">
+    <!-- <link rel="preload" as="image" href="images/hero-banner.webp"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="canonical" href="https://builtlineinteriornivas.com/about.html" />
@@ -39,12 +40,11 @@
 </head>
 <body>
     <section class="section-container">
-            <header class="navbar other-page" data-aos="zoom-in" data-aos-delay="200">
+        <header class="navbar other-page">
             <div class="container">
-                    <div class="nav-left">
-                       <img src="static/images/BUILTLINE.png" alt="Builtline Nivas Interior Designers Bangalore" loading="lazy" loading="lazy" >
-                    </div>
-
+                <div class="nav-left">
+                    <img src="static/images/BUILTLINE.png" alt="Builtline Nivas Interior Designers Bangalore" loading="lazy" loading="lazy" >
+                </div>
                     <ul class="nav-links" id="navLinks" style="color: #000;">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -55,14 +55,14 @@
                                 <li><a href="modular-kitchen-interior-design-in-bengaluru.html">Modular Kitchen</a></li>
                                 <li><a href="poojaroom-interior-design-in-bengaluru.html">Pooja Room</a></li>
                                 <li><a href="dining-interior-design-in-bengaluru.html">Dining Room</a></li>
-                                <li><a href="commerial-interiors-design-bengaluru.html">Commercial Interiors</a></li>                            </ul>
+                                <li><a href="commerial-interiors-design-bengaluru.html">Commercial Interiors</a></li>                            
                             </ul>
                         </li>
                         <li><a href="interior-design-in-bengaluru.html">Blogs</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
 
-                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
                     <a class="quote-btn" href="contact.html" >
                         Get A Free Quote
                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
@@ -134,7 +134,6 @@
             </section>
 
              <section class="team-section">
-
                 <!-- Card 1 -->
                 <div class="team-card" onclick="openModal('modal1')">
                     <img src="static/images/prathana1.webp" alt="person photo"  loading="lazy">
@@ -252,7 +251,7 @@
     </section>
 
     <script src="static/css/scrtpt.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init({
