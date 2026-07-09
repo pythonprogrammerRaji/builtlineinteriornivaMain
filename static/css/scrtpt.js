@@ -125,11 +125,11 @@ filterSelection("all")
 // Slide the image
 
 let images = [
-    'static/images/SF-KIDS STUDY 1.jpg',
-    'static/images/TF-DINING 1.jpg',
-    'static/images/bedroom2.jpg',
-    'static/images/kichen2.jpg',
-    'static/images/FF - DINING 1.jpg'
+    'static/images/kids_study_room.webp',
+    'static/images/FF-dining1_.webp',
+    'static/images/bedroom2.webp',
+    'static/images/kichen2.webp',
+    'static/images/TF-DINING1.webp'
 ];
 
 let currentIndex = 0
@@ -139,46 +139,6 @@ setInterval(() => {
   document.getElementById("sliderImage").src = images[currentIndex];
 }, 3000); // changes every 3 seconds
 
-
-var track = document.getElementById('track');
-var btnNext = document.getElementById('next');
-var btnPrev = document.getElementById('prev');
-
-var index = 0;
-
-btnNext.onclick = function() {
-    var cards = document.querySelectorAll('.review-card');
-    // Check if we are on mobile (less than 768px)
-    var isMobile = window.innerWidth <= 768;
-    
-    // On mobile, scroll through all cards. On desktop, stop at last pair.
-    var max = isMobile ? cards.length - 1 : cards.length - 2;
-    var moveAmount = isMobile ? 100 : 54; 
-
-    if (index < max) {
-        index++;
-    } else {
-        index = 0;
-    }
-    
-    track.style.transform = 'translateX(-' + (index * moveAmount) + '%)';
-};
-
-btnPrev.onclick = function() {
-    var cards = document.querySelectorAll('.review-card');
-    var isMobile = window.innerWidth <= 768;
-    
-    var max = isMobile ? cards.length - 1 : cards.length - 2;
-    var moveAmount = isMobile ? 100 : 55;
-
-    if (index > 0) {
-        index--;
-    } else {
-        index = max;
-    }
-    
-    track.style.transform = 'translateX(-' + (index * moveAmount) + '%)';
-};
 
 // footer year changed
 document.getElementById("year").textContent = new Date().getFullYear();

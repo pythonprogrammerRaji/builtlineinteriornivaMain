@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     /* outline: 1px solid red; */
+    scroll-behavior: smooth !important;
 }
 
 /* Headings */
@@ -74,7 +75,7 @@ header{
 .other-page{
   width: 102%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
-  background-image: url(../images/dinind_interior.jpg);
+  background-image: url(../images/dinind_interior.webp);
 }
 .nav-left{
   position: relative;
@@ -612,7 +613,6 @@ cursor:pointer;
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* 🔥 2 cards per row */
   gap: 20px;
-  /* margin-right: 60px; */
 }
 
 /* Cards */
@@ -674,11 +674,9 @@ cursor:pointer;
   text-transform: uppercase;
   background-color: #ffffffe6;
   width: fit-content;
-  margin: 40px 0px ;
+  /* margin: 40px auto; */
   gap: 20px;
-  
 
-  
 }
 .service-heading h1{
   font-size: 25px;
@@ -1081,138 +1079,128 @@ cursor:pointer;
   color: #555;
 }
 
-/* testiomals */
-
-.review-section { 
-    padding: 100px 0; 
-    overflow: hidden; 
-
-    width: 100%;
-
+/* testimonial */
+.t-section{
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 90%;
+  padding: 30px;
+  margin: 30px auto;
+  height: 400px;
 }
-.review-container { 
-    max-width: 1300px; 
-    margin: 0 auto; 
-    position: relative; 
+.t-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+  transform: scale(1.05);
+  z-index:0;
 }
-
-.review-title { 
-    text-align: right; 
-    margin-bottom: 20px; 
-    padding-right: 50px; 
-}
-.review-title h2 { 
-    font-size: 38px; 
-    color: #111; 
-}
-
-.frame { 
-    position: relative; 
-    display: flex; 
-    align-items: flex-end; 
-}
-
-/* Left Side Image */
-.photo-box { 
-    width: 40%; 
-    height: 450px; 
-    position: relative; 
-    z-index: 1; 
-}
-.photo-box img {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 5px; 
-}
-
-/* Controls */
-.controls { 
-    position: absolute; 
-    bottom: 20px; 
-    left: 20px; 
-    display: flex; 
-    gap: 10px;
- }
-.arrow { 
-    width: 45px; 
-    height: 45px; 
-    background: #fff; 
-    border: 1px solid #ddd; 
-    cursor: pointer; 
-    font-size: 25px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    font-weight: bold;
-    
-}
-
-/* Black Slider Window - Wide enough for 2 cards */
-.slider-box {
-    position: absolute;
-    right: 50px;
-    bottom: -100px;
-    width: 70%; /* Overlaps roughly half the image */
-    padding: 60px 40px;
-    z-index: 2;
-    overflow: hidden; /* Important for sliding */
-}
-
-.track { 
-    display: flex;
-     transition: 0.5s ease-in-out;
-     /* gap: 20px; */
-    }
-
-/* Each card takes half the width of the black box */
-.review-card {
-    min-width: 52%; 
-    height: 300px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    color: #fff;
-    background: #1a1a1a;
-    border-left: 20px solid #fff;
-    border-top: 15px solid #fff;
-
+.t-overlay{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(10, 10, 9, 0.80);
 
 }
+.t-content{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.t-heading{
+  text-align: center;
+  color: #fff;
+  margin: 0 0 2rem;
+}
+.t-wrap{
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: calc(100% - 80px);
+}
+.t-track{
+  display: flex;
+  width: 300%;
+  animation: t-slide 10s infinite;
+}
+.t-slide{
+  position: relative; 
+  width: 33.333%; 
+  flex-shrink: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  gap: 1rem;
+  
+   min-height: 280px; 
+}
+.t-review{
+  width: fit-content; 
+  max-width: 480px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.t-review.left{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  text-align: left;
+  align-items: flex-start;
+}
+.t-review.right{
+ position: absolute;
+  bottom: 0;
+  right: 20px;
+  text-align: right;
+  align-items: flex-end;
+  
 
-.quote { 
-    font-size: 50px; 
-    color: #fff; 
-    display: block; 
-    margin-bottom: 10px; 
 }
-.review-card p { 
-    font-size: 18px; 
-    line-height: 1.6; 
-    color: #ddd; 
-    margin-bottom: 30px; 
+.t-start{
+  color: #f0b429;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.t-text{
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.1;
+  color: rgba(255,255,255,0.92);
+  margin: 0 0 10px;
+}
+.t-name{
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.t-link{
+  font-size: 15px;
+  color: #f0b429;
+  text-decoration: none;
+}
+.t-link :hover{
+  text-decoration: underline;
+}
+@keyframes t-slide {
+  0%   { transform: translateX(0%); }
+  25%  { transform: translateX(0%); }
+  33%  { transform: translateX(-33.33%); }
+  58%  { transform: translateX(-33.33%); }
+  66%  { transform: translateX(-66.66%); }
+  91%  { transform: translateX(-66.66%); }
+  100% { transform: translateX(-66.66%); }
 }
 
-.profile { 
-    display: flex; 
-    align-items: center; 
-    gap: 15px; 
-}
-.profile img { 
-    width: 45px; 
-    height: 45px; 
-    border-radius: 50%; 
-}
-.user-meta strong { 
-    font-size: 15px; 
-}
-.user-meta span { 
-    font-size: 12px; 
-    color: #888; 
-}
 /* cta */
-
 .cta {
-  background: url('../images/bedroom2.jpg') center/cover no-repeat;
+  background: url('../images/bedroom2.webp') center/cover no-repeat;
   height: 380px;
   display: flex;
   align-items: center;
@@ -1524,7 +1512,7 @@ ul {
 }
 
 :root {
-    --light-green: #d9e6b4; /* The signature light green from the image */
+    --light-green: #d9e6b4;
     --dark-text: #1a1a1a;
     --navy-btn: #0a3d4a;
 }
@@ -1543,6 +1531,7 @@ ul {
     width: 100%;
     height: 100%;
     position: relative;
+    margin: 0;
 }
 
 /* Left side with the green background and text */
@@ -1553,8 +1542,10 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     z-index: 0;
-   border-top-right-radius: 200px;
+    border-top-right-radius: 200px;
+
 }
 
 .brand-name {
@@ -1839,13 +1830,13 @@ ul {
 }
 
 /* ADD IMAGES */
-.services-card-image:nth-child(1){ background-image: url('../images/3D-interior.jpg'); }
-.services-card-image:nth-child(2){ background-image: url('../images/space-planing-interior.jpg'); }
-.services-card-image:nth-child(3){ background-image: url('../images/lighting-interior.jpg'); }
-.services-card-image:nth-child(4){ background-image: url('../images/false-celling.jpg'); }
-.services-card-image:nth-child(5){ background-image: url('../images/wall-decore.jpg'); }
-.services-card-image:nth-child(6){ background-image: url('../images/flooring.jpg'); }
-.services-card-image:nth-child(7){ background-image: url('../images/renovation-interior.jpg'); }
+.services-card-image:nth-child(1){ background-image: url('../images/3D-interior.webp'); }
+.services-card-image:nth-child(2){ background-image: url('../images/space-planing-interior.webp'); }
+.services-card-image:nth-child(3){ background-image: url('../images/lighting-interior.webp'); }
+.services-card-image:nth-child(4){ background-image: url('../images/false-celling.webp'); }
+.services-card-image:nth-child(5){ background-image: url('../images/wall-decore.webp'); }
+.services-card-image:nth-child(6){ background-image: url('../images/flooring.webp'); }
+.services-card-image:nth-child(7){ background-image: url('../images/renovation-interior.webp'); }
 
 /* BLUE OVERLAY */
 .services-card-image::before {
@@ -2180,56 +2171,56 @@ ul {
 }
 
 .turnkey-interior-hero{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/turnkey-interior.jpg) ; 
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/turnkey-interior.webp) ; 
 }   
 .corporate-interior-hero{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/office-interior.jpg) 
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../images/office-interior.webp) 
 }
 .hospital-interior-hero{
-     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/hospital-interior.jpg) ;
+     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/hospital-interior.webp) ;
 }
 .Minimalist-interior-hero{
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/mimalist.avif) ;
 }
 .residential-interior-hero{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/living3.jpg) ;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/living3.webp) ;
 }
 .villa-interior-hero{
-     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/villa-interior.jpg) ;
+     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/villa-interior.webp) ;
     
 }
 .retail-interior-hero{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/retails-inteior.jpg) ;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/retails-inteior.webp) ;
 }
 .restaurant-interior-hero{
-background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/restaurant.jpg) ;
+background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/restaurant.webp) ;
 
 }
 .college-interior-hero{
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(../images/college.jpg) ;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(../images/college.webp) ;
 }
 .living-hero{
-  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/living2.jpg) ;
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/living2.webp) ;
 }
 .kitchen-hero{
-  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/kichen_interior.jpg) ;
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/kichen_interior.webp) ;
 }
 .bedroom-hero{
-    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/bedroom2.jpg) ;
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/bedroom2.webp) ;
 }
 .dinning-hero{
-   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/diining1.jpg) ;
+   background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/diining1.webp) ;
 }
 
          
 .pooja-hero{
-  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/FF\ -\ POOJA\ ROOM\ 1.jpg) ;
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/poojaroom1.webp) ;
 }
 .commerial-hero{
-     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/hospital-interior.jpg) ;
+     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/hospital-interior.webp) ;
 }
 .blog-section{
-  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/Luxury-living-room2.jpg) ;
+  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/Luxury-living-room2.webp) ;
 }
 /* Content */
 .living-hero-content h1, .kitchen-hero-content h1{
@@ -3093,22 +3084,10 @@ line-height: 1.6;
   cursor: pointer;
   
 }
-/* .linkContainer a::after{
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0;
-  transition: all 0.4s ease;
-  transform: translate(-50%);
-  height: 2px;
-  background: #F2C200;
-  
-} */
+
 .linkContainer a:hover{
-  transition: all 0.5s ease-in-out;
-  transform: translateX(20%);
-  color: #F2C200;
+  transition: all 0.9s ease-in-out;
+  color: gray;
 }
 .details-content {
     position: relative;

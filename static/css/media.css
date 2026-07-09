@@ -183,7 +183,7 @@
     .other-page{
     width: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
-    background-image: url(../images/dinind_interior.jpg);
+    background-image: url(../images/dinind_interior.webp);
   }
 
    .content{
@@ -497,6 +497,20 @@
   /* .blogs page */
   .blog-content h1{
     font-size: 2rem;
+  }
+
+  .t-slide {
+    flex-direction: column;
+    align-items: center;
+  }
+  .t-review {
+    width: 90%;
+  }
+  .t-review.right {
+    margin-top: 1rem;
+  }
+  .t-heading {
+    font-size: 22px;
   }
 }
 @media (min-width: 769px) and (max-width: 1000px){

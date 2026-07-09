@@ -3,98 +3,98 @@ const blogs = [
         title : "2BHK Interior Cost in Bangalore",
         category: "other",
         slug: "2bhk-interior-cost",
-        image:  "static/images/2bhk-interior.jpg",
+        image:  "static/images/2bhk-interior.webp",
         desc : "Detailed 2BHK interior design cost in Bangalore with budget and material insights."
     },
     {
         title : "Modern Kitchen Design Ideas",
         category: "kitchen",
         slug: "kitchen-design",
-       image:  "static/images/kichen_interior.jpg",
+       image:  "static/images/kichen_interior.webp",
         desc : "Explore modern kitchen design ideas with smart layouts and space-saving solutions."
     },
     {
         title: "Small Bedroom Ideas",
         category: "bedroom",
         slug: "bedroom-ideas",
-        image:  "static/images/bedrooms.jpg",
+        image:  "static/images/bedrooms.webp",
         desc: "Discover small bedroom design ideas to maximize space with stylish interiors."
     },
     {
         title: "Living Room Trends",
         category: "living",
         slug: "living-room",
-        image:  "static/images/Luxury-living-room1.jpg",
+        image:  "static/images/Luxury-living-room1.webp",
         desc: "Latest living room interior design trends with modern styles and décor ideas."
     },
     {
         title: "Low Budget Interior Tips",
         category: "other",
         slug: "budget-design",
-        image:  "static/images/low-budget.jpg",
+        image:  "static/images/low-budget.webp",
         desc: "Affordable interior design tips to create stylish homes on a low budget."
     },
     {
         title: "Luxury Interior Design",
          category: "living",
         slug: "luxury-design",
-        image:  "static/images/luxury-interior.jpg",
+        image:  "static/images/luxury-interior.webp",
         desc: "Premium luxury interior design ideas for elegant and modern homes."
     },
     {
         title: "False Ceiling Designs",
          category: "other",
         slug: "false-ceiling",
-        image:  "static/images/false-celling.jpg",
+        image:  "static/images/false-celling.webp",
         desc: "Modern false ceiling design ideas to enhance interiors with stylish finishes."
     },
     {
         title: "Wardrobe Design Ideas",
          category: "bedroom",
         slug: "wardrobe-design",
-       image:  "static/images/wordrode.jpg",
+       image:  "static/images/wordrode.webp",
         desc: "Functional wardrobe design ideas with smart storage solutions."
     },
     {
         title: "Office Interior Design",
         category: "commercial",
         slug: "office-design",
-        image:  "static/images/office-interior.jpg",
+        image:  "static/images/office-interior.webp",
         desc: "Modern office interior design ideas to improve productivity and workspace."
     },
     {
         title: "Bathroom Interior Ideas",
          category: "bathroom",
         slug: "bathroom-design",
-       image:  "static/images/bathroom.jpg",
+       image:  "static/images/bathroom.webp",
         desc: "Stylish bathroom interior design ideas with modern fittings and layouts."
     },
     {
         title: "Space Saving Furniture",
          category: "other",
         slug: "space-furniture",
-        image:  "static/images/SF-KIDS STUDY 1.jpg",
+        image:  "static/images/kids_study_room.webp",
         desc: "Space-saving furniture ideas for small homes with smart designs."
     },
     {
         title: "Home Lighting Ideas",
          category: "other",
         slug: "lighting-ideas",
-        image:  "static/images/lighting-interior.jpg",
+        image:  "static/images/lighting-interior.webp",
         desc: "Creative home lighting ideas to improve ambiance and interior look."
     },
     {
         title: "Interior Design Mistakes",
          category: "other",
         slug: "design-mistakes",
-        image:  "static/images/mistake-interior.jpg",
+        image:  "static/images/mistake-interior.webp",
         desc: "Common interior design mistakes to avoid for better home planning."
     },
     {
         title: "Modular Kitchen Guide",
          category: "kitchen",
         slug: "modular-kitchen",
-        image:  "static/images/Ukichen.jpg",
+        image:  "static/images/Ukichen.webp",
         desc: "Complete modular kitchen guide with layouts, materials, and cost."
     }
 
@@ -109,7 +109,7 @@ const blogDetails = [
   {
     slug: "2bhk-interior-cost",
     title: "2BHK Interior Cost in Bangalore",
-    image: "static/images/2bhk-interior.jpg",
+    image: "static/images/2bhk-interior.webp",
     content: `
       <h2>2BHK Interior Cost in Bangalore</h2>
       <p>The cost of 2BHK interior design in Bangalore depends on materials, customization, and design style. A basic setup starts from ₹3–5 lakhs.</p>
@@ -125,7 +125,7 @@ const blogDetails = [
   {
     slug: "kitchen-design",
     title: "Modern Kitchen Design Ideas",
-    image: "static/images/kichen_interior.jpg",
+    image: "static/images/kichen_interior.webp",
     content: `
       <h2>Modern Kitchen Design</h2>
       <p>Modern kitchens focus on efficiency, aesthetics, and storage.</p>
@@ -141,7 +141,7 @@ const blogDetails = [
   {
     slug: "bedroom-ideas",
     title: "Small Bedroom Ideas",
-    image: "static/images/bedrooms.jpg",
+    image: "static/images/bedrooms.webp",
     content: `
       <h2>Small Bedroom Design</h2>
       <p>Small bedrooms require smart space planning.</p>
@@ -157,7 +157,7 @@ const blogDetails = [
   {
     slug: "living-room",
     title: "Living Room Trends",
-    image: "static/images/Luxury-living-room1.jpg",
+    image: "static/images/Luxury-living-room1.webp",
     content: `
       <h2>Living Room Interior Trends</h2>
       <p>Modern living rooms focus on minimal design and comfort.</p>
@@ -173,7 +173,7 @@ const blogDetails = [
   {
     slug: "budget-design",
     title: "Low Budget Interior Tips",
-    image: "static/images/low-budget.jpg",
+    image: "static/images/low-budget.webp",
     content: `
       <h2>Budget Interior Design</h2>
       <p>You can design your home beautifully even with a limited budget.</p>
@@ -189,7 +189,7 @@ const blogDetails = [
   {
     slug: "luxury-design",
     title: "Luxury Interior Design",
-    image: "static/images/luxury-interior.jpg",
+    image: "static/images/luxury-interior.webp",
     content: `
       <h2>Luxury Interior Design</h2>
       <p>Luxury interiors focus on premium materials and elegant finishes.</p>
@@ -205,7 +205,7 @@ const blogDetails = [
   {
     slug: "false-ceiling",
     title: "False Ceiling Designs",
-    image: "static/images/false-celling.jpg",
+    image: "static/images/false-celling.webp",
     content: `
       <h2>False Ceiling Design</h2>
       <p>False ceilings improve lighting and aesthetics.</p>
@@ -221,7 +221,7 @@ const blogDetails = [
   {
     slug: "wardrobe-design",
     title: "Wardrobe Design Ideas",
-    image: "static/images/wordrode.jpg",
+    image: "static/images/wordrode.webp",
     content: `
       <h2>Wardrobe Design</h2>
       <p>Wardrobes should be functional and stylish.</p>
@@ -237,7 +237,7 @@ const blogDetails = [
   {
     slug: "office-design",
     title: "Office Interior Design",
-    image: "static/images/office-interior.jpg",
+    image: "static/images/office-interior.webp",
     content: `
       <h2>Office Interior Design</h2>
       <p>Office interiors improve productivity and comfort.</p>
@@ -253,7 +253,7 @@ const blogDetails = [
   {
     slug: "bathroom-design",
     title: "Bathroom Interior Ideas",
-    image: "static/images/bathroom.jpg",
+    image: "static/images/bathroom.webp",
     content: `
       <h2>Bathroom Interior Design</h2>
       <p>Modern bathrooms focus on cleanliness and style.</p>
@@ -269,7 +269,7 @@ const blogDetails = [
   {
     slug: "space-furniture",
     title: "Space Saving Furniture",
-    image: "static/images/SF-KIDS STUDY 1.jpg",
+    image: "static/images/kids_study_room.webp",
     content: `
       <h2>Space Saving Furniture</h2>
       <p>Smart furniture helps maximize small spaces.</p>
@@ -285,7 +285,7 @@ const blogDetails = [
   {
     slug: "lighting-ideas",
     title: "Home Lighting Ideas",
-    image: "static/images/lighting-interior.jpg",
+    image: "static/images/lighting-interior.webp",
     content: `
       <h2>Home Lighting Design</h2>
       <p>Lighting enhances mood and interior aesthetics.</p>
@@ -301,7 +301,7 @@ const blogDetails = [
   {
     slug: "design-mistakes",
     title: "Interior Design Mistakes",
-    image: "static/images/mistake-interior.jpg",
+    image: "static/images/mistake-interior.webp",
     content: `
       <h2>Interior Design Mistakes</h2>
       <p>Avoid common mistakes to improve design quality.</p>
@@ -317,7 +317,7 @@ const blogDetails = [
   {
     slug: "modular-kitchen",
     title: "Modular Kitchen Guide",
-    image: "static/images/Ukichen.jpg",
+    image: "static/images/Ukichen.webp",
     content: `
       <h2>Modular Kitchen Guide</h2>
       <p>Modular kitchens are efficient and modern.</p>
