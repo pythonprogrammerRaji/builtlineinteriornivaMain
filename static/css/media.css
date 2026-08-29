@@ -9,23 +9,19 @@
     color: #000;
   }
   .navbar {
-      background: rgba(0,0,0,0.5); 
-      padding:18px 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
+    background: rgba(0,0,0,0.5); 
+    padding:18px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .nav-left{
     position: relative;
     left: -20px;
     top: 3px;
-    width: 200px;
-    height: 80px;
-
-    
-
+    width: 150px;
+    height: 70px;
   }
   .nav-left img{
     height: 100%;
@@ -205,6 +201,7 @@
 
    .content{
     margin-top: 20px;
+    height: fit-content;
    }
 
    /* review */
@@ -529,6 +526,53 @@
   .t-heading {
     font-size: 22px;
   }
+  .col-image{
+     width: 150px;
+  }
+  
+  .cta{
+    margin: 10px;
+    width: 100%;
+  }
+  .cta-content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .cta-content p {
+    font-size: 15px;
+  }
+  .t-section{
+     padding: 10px;
+     margin: 10px auto;
+  }
+  .ceo-section{
+    margin-left: 0px;
+    width: 100%;
+   
+  }
+  .ceo-profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+  .ceo-text{
+    width: 100%;
+  }
+  .profile-ceo-image{
+  width: 340px;
+  height: 300px;
+}
+.profile-ceo-image img{
+  width: 100%;
+}
+.ceo-text h1{
+  font-size: 30px;
+}
+.ceo-text b{
+  font-size: 20px;
+  
+}
+
 }
 @media (min-width: 769px) and (max-width: 1000px){
     .navbar{
